@@ -2,5 +2,30 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+}
 
+/* .container-fluid {
+    width: 100vh;
+} */
+
+.img1, .img2, .img3, .img4, .img5 {
+    width: 100px;
+    height: 100px;
+}
+
+.section-padding {
+    padding-top: 140px;
+    padding-bottom: 140px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.section-title {
+    margin-bottom: 60px;
+}
+
+.section-title .line {
+    width: 60px;
+    height: 4px;
+    margin: 16 px auto 24 px auto;
 }
