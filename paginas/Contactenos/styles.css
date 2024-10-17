@@ -9,3 +9,11 @@ iframe {
     padding-left: 320px;
     padding-right: 120px;
 }
+
+.formulario {
+    /* display: flex; */
+    width: 800px;
+    height: 800px;
+    /* border: 1px solid grey; */
+    padding-left: 50px;
+}
