@@ -63,3 +63,17 @@
     }
 }
 
+/* MEDIA QUERIES PANTALLA SM */
+@media (max-width:768px) {
+    #intro  {
+        width: 90% !important;
+    }
+
+    .servicio-row {
+        width: 100% !important;
+    }
+
+    .servicio-section {
+        width: 100% !important;
+    }
+}
