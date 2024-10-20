@@ -11,7 +11,10 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"  />
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
     <header>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
@@ -90,204 +93,371 @@
       </nav>
     </header>
 
-      <main>
-        <div class="container-fluid">
-          <div class="row">
-            <div class="d-flex flex-column align-items-center col-lg-6 col-md-6col-sm-12 text-center">
-                <div class="d-flex flex-column">
-                    <div>
-                      <div class="card m-5" style="width: 30rem;">
-                        <div class="card-header d-flex justify-content-center align-items-center">
-                          <img class="imgRubro" src="../../assets/carrito/electricidad.png" alt="">
-                          <h5 class="p-2">Electricidad</h5>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                          <li class="list-group-item">
-                            <div>
-                            <img src="../../assets/img-servicios/Gaston1.png" alt="usuario">
-                            <h3>Cesar Petit</h3>  
-                                                      
-                          </li>
-                          <li class="list-group-item">
-                            <table class="table table-bordered border-primary">
-                              <thead>
-                                <tr>
-                                  <th scope="col">#</th>
-                                  <th scope="col">First</th>
-                                  <th scope="col">Last</th>
-                                  <th scope="col">Handle</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <th scope="row">1</th>
-                                  <td>Mark</td>
-                                  <td>Otto</td>
-                                  <td>@mdo</td>
-                                </tr>
-                                <tr>
-                                  <th scope="row">2</th>
-                                  <td>Jacob</td>
-                                  <td>Thornton</td>
-                                  <td>@fat</td>
-                                </tr>
-                                <tr>
-                                  <th scope="row">3</th>
-                                  <td colspan="2">Larry the Bird</td>
-                                  <td>@twitter</td>
-                                </tr>
-                            </table>
-                          </li>
-                          <li class="list-group-item">Vestibulum at eros</li>
-                        </ul>
-                      </div>                       
+    <main>
+      <div class="container-fluid">
+        <div class="row">
+          <div
+            class="d-flex flex-column align-items-center col-lg-6 col-md-6col-sm-12 text-center"
+          >
+            <div class="card m-5" style="width: 30rem">
+              <div
+                class="card-header d-flex justify-content-center align-items-center"
+              >
+                <img
+                  class="imgRubro"
+                  src="../../assets/carrito/electricidad.png"
+                  alt=""
+                />
+                <h5 class="p-2">Electricidad</h5>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <img
+                    src="../../assets/img-servicios/Gaston1.png"
+                    alt="usuario"
+                  />
+                  <h3>Cesar Petit</h3>
+                </li>
+                <li class="list-group-item">
+                  <table class="table table-bordered border-primary">
+                    <thead>
+                      <tr>
+                        <th scope="col">Codigo</th>
+                        <th scope="col">Decripcion</th>
+                        <th scope="col">Cantidad</th>
+                        <th scope="col">Precio Unitario</th>
+                        <th scope="col">Total</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Horas Trabajadas</td>
+                        <td>4.5</td>
+                        <td>$2500</td>
+                        <td>$12500</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>cables</td>
+                        <td>10</td>
+                        <td>$1000</td>
+                        <td>$10000</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Tomas Doble</td>
+                        <td>2</td>
+                        <td>$2500</td>
+                        <td>$5000</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </li>
+              </ul>
+
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#ModalTecnico"
+              >
+                Informe Tecnico
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="ModalTecnico"
+                tabindex="-1"
+                aria-labelledby="ModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-scrollable">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="ModalLabel">
+                        Trabajos Realizados
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
                     </div>
-                    <div>
-                      <div class="card m-5" style="width: 30rem;">
-                        <div class="card-header d-flex justify-content-center align-items-center">
-                          <img class="imgRubro" src="../../assets/carrito/electricidad.png" alt="">
-                          <h5 class="p-2">Electricidad</h5>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                          <li class="list-group-item">
-                            <img src="../../assets/img-servicios/Gaston1.png" alt="usuario">
-                            <h3>Cesar Petit</h3>                            
+                    <div class="modal-body overflow-auto">
+                      <div class="text-justify bg-light p-3 border rounded">
+                        <p><strong>Informe Técnico Eléctrico</strong></p>
+                        <p>
+                          <strong>Proyecto:</strong> Recableado y Cambio de
+                          Tomas en Instalación Eléctrica
+                        </p>
+                        <p>
+                          <strong>Descripción del Trabajo:</strong> El trabajo
+                          realizado comprende el recableado de una sección de 10
+                          metros de cable y el cambio de dos tomas combinados
+                          dobles. A continuación, se detallan las acciones
+                          realizadas y los materiales utilizados en el proceso.
+                        </p>
+
+                        <p>
+                          <strong>1. Recableado de 10 metros de cable</strong>
+                        </p>
+                        <ul>
+                          <li>
+                            <strong>Tipo de cable utilizado:</strong> Cable
+                            unipolar de cobre de 2,5 mm².
                           </li>
-                          <li class="list-group-item">Dapibus ac facilisis in</li>
-                          <li class="list-group-item">Vestibulum at eros</li>
+                          <li>
+                            <strong>Longitud instalada:</strong> 10 metros.
+                          </li>
+                          <li>
+                            <strong>Objetivo:</strong> Mejorar la capacidad de
+                            conducción y asegurar el cumplimiento de normas de
+                            seguridad, reemplazando el cable existente que
+                            presentaba desgaste.
+                          </li>
+                          <li>
+                            <strong>Procedimiento:</strong>
+                            <ul>
+                              <li>
+                                Desconexión del suministro eléctrico en la zona
+                                de trabajo.
+                              </li>
+                              <li>Retiro del cable antiguo deteriorado.</li>
+                              <li>
+                                Instalación del nuevo cableado, asegurando su
+                                correcta fijación y resguardando la integridad
+                                del aislamiento.
+                              </li>
+                              <li>
+                                Verificación de la continuidad eléctrica y
+                                ausencia de cortocircuitos antes de restablecer
+                                el suministro.
+                              </li>
+                            </ul>
+                          </li>
                         </ul>
-                      </div>                       
-                    </div>    
+
+                        <p>
+                          <strong
+                            >2. Cambio de 2 Tomas Combinados Dobles</strong
+                          >
+                        </p>
+                        <ul>
+                          <li>
+                            <strong>Tipo de toma instalado:</strong> Tomas
+                            combinados dobles con toma a tierra.
+                          </li>
+                          <li><strong>Cantidad:</strong> 2 unidades.</li>
+                          <li>
+                            <strong>Objetivo:</strong> Sustituir los tomas
+                            antiguos que mostraban desgaste y poca fiabilidad,
+                            mejorando la seguridad y estética de la instalación.
+                          </li>
+                          <li>
+                            <strong>Procedimiento:</strong>
+                            <ul>
+                              <li>Retiro de los tomas combinados antiguos.</li>
+                              <li>
+                                Revisión de las conexiones eléctricas y ajuste
+                                de los bornes de conexión.
+                              </li>
+                              <li>
+                                Instalación de los nuevos tomas combinados
+                                dobles, asegurando la conexión adecuada del
+                                cableado y su fijación a la caja de conexión.
+                              </li>
+                              <li>
+                                Verificación del correcto funcionamiento de los
+                                tomas combinados mediante pruebas de conexión.
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+
+                        <p>
+                          <strong>Materiales Utilizados:</strong> Cable unipolar
+                          de cobre de 2,5 mm² (10 metros). Tomas combinados
+                          dobles (2 unidades). Cinta aislante y tornillería para
+                          fijación.
+                        </p>
+
+                        <p><strong>Pruebas Realizadas:</strong></p>
+                        <ul>
+                          <li>
+                            Prueba de continuidad en el nuevo cableado para
+                            asegurar la ausencia de cortes.
+                          </li>
+                          <li>
+                            Verificación del funcionamiento de los tomas
+                            mediante conexión de dispositivos eléctricos.
+                          </li>
+                          <li>
+                            Revisión de la correcta fijación y estabilidad de
+                            los tomas combinados.
+                          </li>
+                        </ul>
+
+                        <p>
+                          <strong>Conclusión:</strong> El recableado de los 10
+                          metros de cable y la instalación de los dos tomas
+                          combinados dobles se completó de manera satisfactoria,
+                          mejorando la seguridad y el rendimiento de la
+                          instalación eléctrica. Las pruebas de funcionamiento
+                          realizadas aseguran que el sistema está operativo y
+                          cumple con los estándares de seguridad vigentes.
+                        </p>
+
+                        <p>
+                          Este informe proporciona un resumen de los trabajos
+                          realizados y puede ser utilizado como referencia para
+                          futuras inspecciones o mantenimientos de la
+                          instalación.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-            
-
-
+              </div>
             </div>
-            <div class="d-flex flex-column align-items-center col-lg-6 col-md-6col-sm-12 text-center">
-              <h1>hola mundo</h1>
+          </div>
+          <div
+            class="d-flex flex-column align-items-center col-lg-6 col-md-6col-sm-12 text-center"
+          >
+            <h1>hola mundo</h1>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="w-100 colorFooter">
+        <div class="secundaryfooter">
+          <div class="row">
+            <div
+              class="d-flex flex-column align-items-center col-lg-4 col-sm-6 text-center"
+            >
+              <h3>SUSCRIBETE A LAS NEWSLETTER</h3>
+              <h5>Recibe ofertas, novedades y mucho mas</h5>
+              <div class="mb-3 imputNew">
+                <label for="controlInput" class="form-label"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="controlInput"
+                  placeholder="Indicanos tu Email"
+                />
+              </div>
+              <a class="mb-4 mt-4 m" href="../acercaDe/acercaDe.html"
+                >+ Informacion Sobre Nosotros</a
+              >
+
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label
+                  class="form-check-label mb-3 ms-0"
+                  for="flexCheckDefault"
+                >
+                  He leido y acepto la politica de privacidad
+                  <a class="mb-4 mt-4" href="../error/error504.html"
+                    >politica de Privacidad</a
+                  >
+                </label>
+              </div>
+
+              <button
+                onclick="window.location.href='../error/error504.html';"
+                type="button btnNews"
+                class="btn btn-primary"
+              >
+                QUIERO SUBCRIBIRME
+              </button>
+            </div>
+            <div
+              class="col-md-3 col-lg-4 col-sm-6 d-flex flex-column align-items-center"
+            >
+              <h3>Síguenos</h3>
+              <div class="contact-info">
+                <div class="contact-item">
+                  <img
+                    src="../../assets/communication.png"
+                    alt="Icono"
+                    style="width: 50px; height: 50px"
+                  />
+                  <p class="p-2">
+                    <a href="https:facebook.com" target="_blank">Facebook</a>
+                  </p>
+                </div>
+                <div class="contact-item">
+                  <img
+                    src="../../assets//instagram.png"
+                    alt="Icono"
+                    style="width: 50px; height: 50px"
+                  />
+                  <p class="p-2">
+                    <a href="https:instagram.com" target="_blank">Instagram</a>
+                  </p>
+                </div>
+                <div class="contact-item">
+                  <img
+                    src="../../assets//twitter.png"
+                    alt="Icono"
+                    style="width: 50px; height: 50px"
+                  />
+                  <p class="p-2">
+                    <a href="https://x.com/" target="_blank">Twitter</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-md-3 col-lg-4 col-sm-6 d-flex flex-column align-items-center"
+            >
+              <h3>Contacto</h3>
+              <div class="contact-info">
+                <div class="contact-item">
+                  <img
+                    src="../../assets/location.png"
+                    alt="Icono"
+                    style="width: 50px; height: 50px"
+                  />
+                  <p class="p-2">RollingCode</p>
+                </div>
+                <div class="contact-item">
+                  <img
+                    src="../../assets/telephone.png"
+                    alt="Icono"
+                    style="width: 50px; height: 50px"
+                  />
+                  <p class="p-2">+54 381 578-3030</p>
+                </div>
+                <div class="contact-item">
+                  <img
+                    src="../../assets/mail.png"
+                    alt="Icono"
+                    style="width: 50px; height: 50px"
+                  />
+                  <p class="p-2">
+                    <a href="mailto:academy@rollingcodeschool.com"
+                      >academy@rollingcodeschool.com</a
+                    >
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </main>
-
-      <footer>
-        <div class="w-100 colorFooter">
-          <div class="secundaryfooter">
-            <div class="row">
-              <div
-                class="d-flex flex-column align-items-center col-lg-4 col-sm-6 text-center"
-              >
-                <h3>SUSCRIBETE A LAS NEWSLETTER</h3>
-                <h5>Recibe ofertas, novedades y mucho mas</h5>
-                <div class="mb-3 imputNew">
-                  <label for="controlInput" class="form-label"
-                    >Email address</label
-                  >
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="controlInput"
-                    placeholder="Indicanos tu Email"
-                  />
-                </div>
-                <a class="mb-4 mt-4 m" href="../acercaDe/acercaDe.html"
-                  >+ Informacion Sobre Nosotros</a
-                >
-  
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="flexCheckDefault"
-                  />
-                  <label
-                    class="form-check-label mb-3 ms-0"
-                    for="flexCheckDefault"
-                  >
-                    He leido y acepto la politica de privacidad
-                    <a class="mb-4 mt-4" href="../error/error504.html"
-                      >politica de Privacidad</a
-                    >
-                  </label>
-                </div>
-  
-                <button
-                  onclick="window.location.href='../error/error504.html';"
-                  type="button btnNews"
-                  class="btn btn-primary"
-                >
-                  QUIERO SUBCRIBIRME
-                </button>
-              </div>
-              <div class="col-md-3 col-lg-4 col-sm-6 d-flex flex-column align-items-center">
-                <h3>Síguenos</h3>
-                <div class="contact-info">
-                  <div class="contact-item">
-                    <img
-                      src="../../assets/communication.png"
-                      alt="Icono"
-                      style="width: 50px; height: 50px"
-                    />
-                    <p class="p-2"><a href="https:facebook.com"  target="_blank">Facebook</a></p>
-                  </div>
-                  <div class="contact-item">
-                    <img
-                      src="../../assets//instagram.png"
-                      alt="Icono"
-                      style="width: 50px; height: 50px"
-                    />
-                    <p class="p-2"><a href="https:instagram.com" target="_blank">Instagram</a></p>
-                  </div>
-                  <div class="contact-item">
-                    <img
-                      src="../../assets//twitter.png"
-                      alt="Icono"
-                      style="width: 50px; height: 50px"
-                    />
-                    <p class="p-2"><a href="https://x.com/" target="_blank">Twitter</a></p>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="col-md-3 col-lg-4 col-sm-6 d-flex flex-column align-items-center"
-              >
-                <h3>Contacto</h3>
-                <div class="contact-info">
-                  <div class="contact-item">
-                    <img
-                      src="../../assets/location.png"
-                      alt="Icono"
-                      style="width: 50px; height: 50px"
-                    />
-                    <p class="p-2">RollingCode</p>
-                  </div>
-                  <div class="contact-item">
-                    <img
-                      src="../../assets/telephone.png"
-                      alt="Icono"
-                      style="width: 50px; height: 50px"
-                    />
-                    <p class="p-2">+54 381 578-3030</p>
-                  </div>
-                  <div class="contact-item">
-                    <img
-                      src="../../assets/mail.png"
-                      alt="Icono"
-                      style="width: 50px; height: 50px"
-                    />
-                    <p class="p-2">
-                      <a href="mailto:academy@rollingcodeschool.com"
-                        >academy@rollingcodeschool.com</a
-                      >
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="d-flex flex-column align-items-center">
-          <hr class="my-2 linea">
+        <div class="d-flex flex-column align-items-center">
+          <hr class="my-2 linea" />
           <div
             class="d-flex flex-column principalfooter align-items-center justify-content-center"
           >
@@ -297,23 +467,28 @@
               plomería y más. ¡Todo lo que necesitas, en manos expertas!
             </p>
           </div>
-          <hr class="my-2 linea">      
+          <hr class="my-2 linea" />
           <div
             class="d-flex flex-column principalfooter align-items-center justify-content-center"
-          >      
-          <p class="mb-0">@Copyright. All Equipo Rocket</p>
-            </p>
+          >
+            <p class="mb-0">@Copyright. All Equipo Rocket</p>
           </div>
         </div>
-        </div>
-      </footer>
-
-
-  
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
+    <!-- <script>
+      const myModal = document.getElementById("myModal");
+      const myInput = document.getElementById("myInput");
+
+      myModal.addEventListener("shown.bs.modal", () => {
+        myInput.focus();
+      });
+    </script> -->
   </body>
 </html>
