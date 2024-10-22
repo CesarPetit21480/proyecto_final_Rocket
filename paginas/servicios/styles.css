@@ -121,12 +121,7 @@ main{
                transition: all .9s;
              }
              
-             iframe{
-                    width: 100%;
-                    border-radius: 10px;
-                    display: block;
-                    
-                }
+            
 
                 a{
                     margin-top: 1em;
@@ -192,6 +187,13 @@ main{
 
     i{
         color: var(--color-primary);
+    }
+    .nueva-dir{
+        margin-top: 2em;
+        margin-bottom: 1em;
+        color: black;
+        
+        
     }
    
 }
