@@ -75,48 +75,51 @@
                 <h3>Cesar Petit</h3>
               </li>
               <li class="list-group-item">
-                <table class="table table-bordered border-primary">
-                  <thead>
-                    <tr>
-                      <th scope="col">Codigo</th>
-                      <th scope="col">Decripcion</th>
-                      <th scope="col">Cantidad</th>
-                      <th scope="col">Precio Unitario</th>
-                      <th scope="col">Total</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td>Horas Trabajadas</td>
-                      <td>4.5</td>
-                      <td>$2500</td>
-                      <td>$12500</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td>cables</td>
-                      <td>10</td>
-                      <td>$1000</td>
-                      <td>$10000</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td>Tomas Doble</td>
-                      <td>2</td>
-                      <td>$2500</td>
-                      <td>$5000</td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div class="table-responsive">
+                  <table class="table table-bordered border-primary">
+                    <thead>
+                      <tr>
+                        <th scope="col">Codigo</th>
+                        <th scope="col">Decripcion</th>
+                        <th scope="col">Cantidad</th>
+                        <th scope="col">Precio Unitario</th>
+                        <th scope="col">Total</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Horas Trabajadas</td>
+                        <td>4.5</td>
+                        <td>$2500</td>
+                        <td>$12500</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>cables</td>
+                        <td>10</td>
+                        <td>$1000</td>
+                        <td>$10000</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Tomas Doble</td>
+                        <td>2</td>
+                        <td>$2500</td>
+                        <td>$5000</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </li>
             </ul>
 
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-              data-bs-target="#ModalTecnicoElectricidad">
-              Informe Tecnico
-            </button>
+            <div class="d-flex justify-content-center m-3">
+              <button type="button" class="btn btn-primary w-50" data-bs-toggle="modal"
+                data-bs-target="#ModalTecnicoElectricidad">
+                Informe Tecnico
+              </button>
+            </div>
 
             <!-- Modal -->
             <div class="modal fade" id="ModalTecnicoElectricidad" tabindex="-1" aria-labelledby="ModalLabel"
@@ -312,10 +315,12 @@
               </li>
             </ul>
 
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalTecnicoPlomeria">
-              Informe Tecnico
-            </button>
+            <div class="d-flex justify-content-center m-3">
+              <button type="button" class="btn btn-primary  w-50" data-bs-toggle="modal"
+                data-bs-target="#ModalTecnicoPlomeria">
+                Informe Tecnico
+              </button>
+            </div>
 
             <!-- Modal -->
             <div class="modal fade " id="ModalTecnicoPlomeria" tabindex="-1" aria-labelledby="ModalLabel"
@@ -481,13 +486,13 @@
                 </table>
               </li>
             </ul>
+            <div class="d-flex justify-content-center m-3">
 
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-              data-bs-target="#ModalTecnicoCarpinteria">
-              Informe Tecnico
-            </button>
-
+              <button type="button" class="btn btn-primary w-50" data-bs-toggle="modal"
+                data-bs-target="#ModalTecnicoCarpinteria">
+                Informe Tecnico
+              </button>
+            </div>
             <!-- Modal -->
             <div class="modal fade " id="ModalTecnicoCarpinteria" tabindex="-1" aria-labelledby="ModalLabel"
               aria-hidden="true">
@@ -595,7 +600,7 @@
           class="d-flex flex-column align-items-center col-lg-6 col-md-6 col-sm-12 text-center d-flex flex-column justify-content-center align-items-center">
 
           <div class="col-lg-6 col-md-12 col-sm-12 position-relative d-flex align-items-center justify-content-center">
-            <img class="responsive-img" src="../../assets/carrito/mediosDePago.png" alt="">
+            <img class="responsive-img" src="../../assets/carrito/mediosDePago.png" alt="imgMediosPago">
           </div>
 
           <form class="row g-3 col-lg-6 col-md-6 col-sm-12 needs-validation d-flex flex-column w-100 align-items-center"
@@ -656,8 +661,8 @@
                 Please select a Cuota Valida
               </div>
             </div>
-            <div class="col-12 p-3">
-              <button class="btn btn-primary" type="submit">Efectuar Pago</button>
+            <div class="col-12 p-3 ">
+              <button class="btn btn-primary tamBtn" type="submit">Efectuar Pago</button>
             </div>
           </form>
         </div>
@@ -768,7 +773,6 @@
             event.preventDefault()
             event.stopPropagation()
           }
-
           form.classList.add('was-validated')
         }, false)
       })
