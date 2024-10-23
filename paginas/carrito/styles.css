@@ -45,3 +45,27 @@ body {
     rgba(221, 229, 231, 1) 100%
   );
 }
+
+.overIzquierda {
+  overflow-y: scroll;
+  max-height: 100vh;
+}
+
+
+.responsive-img {
+  width: 100%; 
+  max-width: 500px; 
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .responsive-img {
+    max-width: 300px;/
+  }
+}
+
+@media (max-width: 480px) {
+  .responsive-img {
+    max-width: 200px; 
+  }
+}
