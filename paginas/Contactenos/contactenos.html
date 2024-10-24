@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Contactenos</title>
     <link rel="stylesheet" href="../../styles/styles.css" />
-
+    <link rel="stylesheet" href="../Contactenos/styles.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -91,7 +91,123 @@
         </div>
       </nav>
     </header>
-    <h1>Contactenos</h1>
+    <h2 class="p-5">Encontranos en...</h2>
+    <section id="container" class="mapa mb-4">
+      <div class="row">
+        <div class="col-3">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2407.5926662728502!2d-64.18040785547306!3d-31.418253046645717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432bd15c5cf80d5%3A0xe0113a2b6f6b4164!2sMUNDO%20NOTEBOOK!5e0!3m2!1ses!2sar!4v1729030178656!5m2!1ses!2sar"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div id="direction" class="col-6">
+          <img src="../../assets/images/map-pin-fill.png" alt="mapa" />
+          <p class="col-3">Dirección: Chacabuco 36, X5000 Córdoba</p>
+          <div id="facebook">
+            <img
+              src="../../assets/images/facebook-circle-fill.png"
+              alt="logoFacebook"
+            />
+            <p>Estamos para ayudarte</p>
+          </div>
+          <div id="instagram" class="col-3">
+            <img
+              src="../../assets/images/instagram-line.png"
+              alt="logoInstagram"
+            />
+            <p>Estamos_ok</p>
+          </div>
+          <div id="whatsapp">
+            <img
+              src="../../assets/images/whatsapp-fill.png"
+              alt="logoWhatsapp"
+            />
+            <p>3518596012</p>
+          </div>
+          <div id="mail">
+            <img src="../../assets/images/mail-line.png" alt="logoMail" />
+          </div>
+          <p>estamosparayudarte@gmail.com</p>
+        </div>
+      </div>
+    </section>
+    <section id="container" class="formulario">
+      <h3>Contáctenos</h3>
+      <p class="p-2">
+        Si tenés alguna duda, comentario o sugerencia, podés contactarnos y nos
+        comunicaremos con vos lo antes posible.
+      </p>
+      <form class="row g-3">
+        <div class="col-md-3">
+          <label for="text" class="form-label">Nombre</label>
+          <input type="email" class="form-control" id="inputText" />
+        </div>
+        <div class="col-md-3">
+          <label for="inputText2" class="form-label">Apellido</label>
+          <input type="password" class="form-control" id="inputText2" />
+        </div>
+        <div class="col-4">
+          <label for="inputEmail4" class="form-label">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="inputEmail4"
+            placeholder="nombre@mail.com"
+          />
+        </div>
+        <div class="col-6">
+          <label for="inputAddress" class="form-label">Address</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputAddress"
+            placeholder="calle, altura, departarmento"
+          />
+        </div>
+        <div class="col-md-4">
+          <label for="inputCity" class="form-label">Ciudad</label>
+          <input type="text" class="form-control" id="inputCity" />
+        </div>
+        <div class="col-md-3">
+          <label for="inputCity" class="form-label">Provincia</label>
+          <input type="text" class="form-control" id="inputCity" />
+        </div>
+        <div class="col-md-4">
+          <label for="inputText2" class="form-label">Número de teléfono</label>
+          <input type="text" class="form-control" id="inputText2" placeholder="por ej. 011+teléfono" />
+        </div>
+        <div class="col-md-2">
+          <label for="inputZip" class="form-label">Código postal</label>
+          <input type="number" class="form-control" id="inputZip" />
+        </div>
+        <div class="mb-3 col-10">
+          <label for="exampleFormControlTextarea1" class="form-label"
+            >Mensaje</label
+          >
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="3"
+          ></textarea>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck" />
+            <label class="form-check-label" for="gridCheck">
+              Acepto la política de privacidad
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+      </form>
+    </section>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
