@@ -18,14 +18,20 @@
     text-align: center;
 }
 
-#profesionales {
+/* #profesionales {
     background-color: #9fb0aa;
+    opacity: 0.1;
+} */
+
+.card {
+    width: 500px;
+    height: 300px;
 }
 
-.img1, .img2, .img3, .img4, .img5 {
-    width: 100px;
-    height: 100px;
-}
+/* .card-img-top {
+    width: 50% vh;
+    height: 200px;
+} */
 
 .section-padding {
     padding-top: 140px;
