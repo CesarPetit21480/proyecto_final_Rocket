@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>register</title>
     <link rel="stylesheet" href="../../styles/styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -96,15 +97,257 @@
       </nav>
     </header>
 
-   <main>
+    <main>
+      <div class="row">
+        <div
+          class="d-flex justify-content-center align-content-center w-100 col-md-6 col-sm-12 p-4 m-4"
+        >
+          <form
+            class="col-lg-6 col-md-6 col-sm-12 needs-validation d-flex flex-column w-50 align-items-center"
+            novalidate
+          >
+            <div class="col-lg-6 col-md-12 col-sm-12 position-relative">
+              <label for="validacionNombre" class="form-label"> Nombre</label>
+              <input
+                type="text"
+                class="form-control"
+                id="validacionNombre"
+                required
+                placeholder="Ingrese su nombre"
+              />
+              <div class="valid-tooltip">Campo Correcto</div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 position-relative">
+              <label for="validacionApellido" class="form-label"
+                >Apellido</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="validacionApellido"
+                placeholder="Ingrese su Apellido"
+                required
+              />
+              <div class="valid-tooltip">Looks good!</div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 position-relative">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Correo Electronico</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="name@example.com"
+              />
+              <div class="valid-tooltip">Looks good!</div>
+            </div>
 
+            <div class="col-lg-6 col-md-12 col-sm-12 position-relative">
+              <label for="validationTooltip02" class="form-label">EDAD</label>
+              <input
+                type="text"
+                class="form-control"
+                id="validationTooltip02"
+                placeholder="Ingrese su Edad"
+                required
+              />
+              <div class="valid-tooltip">Looks good!</div>
+            </div>
 
-    
-   </main>
+            <div class="col-lg-6 col-md-12 col-sm-12 position-relative">
+              <label for="validarionMedios" class="form-label">GENERO</label>
+              <select class="form-select" id="validarionSexo" required>
+                <option selected disabled value="">Seleccion...</option>
+                <option>Masculino</option>
+                <option>Femenino</option>
+                <option>Otro</option>
+              </select>
+              <div class="invalid-tooltip">Selecciones Genero.</div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 p-3 d-flex justify-content-center">
+              <button class="btn btn-primary tamBtn" type="submit">
+                Registracion
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="w-100 colorFooter">
+        <div class="secundaryfooter">
+          <div class="row">
+            <div
+              class="d-flex flex-column align-items-center col-lg-4 col-sm-6 text-center"
+            >
+              <h3>SUSCRIBETE A LAS NEWSLETTER</h3>
+              <h5>Recibe ofertas, novedades y mucho mas</h5>
+              <div class="mb-3 imputNew">
+                <label for="controlInput" class="form-label"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="controlInput"
+                  placeholder="Indicanos tu Email"
+                />
+              </div>
+              <a class="mb-4 mt-4 m" href="./paginas/acercaDe/acercaDe.html"
+                >+ Informacion Sobre Nosotros</a
+              >
+
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label
+                  class="form-check-label mb-3 ms-0"
+                  for="flexCheckDefault"
+                >
+                  He leido y acepto la politica de privacidad
+                  <a class="mb-4 mt-4" href="./paginas/error/error504.html"
+                    >politica de Privacidad</a
+                  >
+                </label>
+              </div>
+
+              <button
+                onclick="window.location.href='./paginas/error/error504.html';"
+                type="button btnNews"
+                class="btn btn-success"
+              >
+                QUIERO SUBCRIBIRME
+              </button>
+            </div>
+            <div
+              class="col-md-3 col-lg-4 col-sm-6 d-flex flex-column align-items-center"
+            >
+              <h3>Síguenos</h3>
+              <div class="contact-info">
+                <div class="contact-item">
+                  <img
+                    src="../../assets/communication.png"
+                    alt="Icono"
+                    style="width: 50px; height: 50px"
+                  />
+                  <p class="p-2">
+                    <a href="https:facebook.com" target="_blank">Facebook</a>
+                  </p>
+                </div>
+                <div class="contact-item">
+                  <img
+                    src="../../assets/instagram.png"
+                    alt="Icono"
+                    style="width: 50px; height: 50px"
+                  />
+                  <p class="p-2">
+                    <a href="https:instagram.com" target="_blank">Instagram</a>
+                  </p>
+                </div>
+                <div class="contact-item">
+                  <img
+                    src="../../assets/twitter.png"
+                    alt="Icono"
+                    style="width: 50px; height: 50px"
+                  />
+                  <p class="p-2">
+                    <a href="https://x.com/" target="_blank">Twitter</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-md-3 col-lg-4 col-sm-6 d-flex flex-column align-items-center"
+            >
+              <h3>Contacto</h3>
+              <div class="contact-info">
+                <div class="contact-item">
+                  <img
+                    src="../../assets/location.png"
+                    alt="Icono"
+                    style="width: 50px; height: 50px"
+                  />
+                  <p class="p-2">RollingCode</p>
+                </div>
+                <div class="contact-item">
+                  <img
+                    src="../../assets/telephone.png"
+                    alt="Icono"
+                    style="width: 50px; height: 50px"
+                  />
+                  <p class="p-2">+54 381 578-3030</p>
+                </div>
+                <div class="contact-item">
+                  <img
+                    src="../../assets/mail.png"
+                    alt="Icono"
+                    style="width: 50px; height: 50px"
+                  />
+                  <p class="p-2">
+                    <a href="mailto:academy@rollingcodeschool.com"
+                      >academy@rollingcodeschool.com</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-column align-items-center">
+          <hr class="my-2 linea" />
+          <div
+            class="d-flex flex-column principalfooter align-items-center justify-content-center"
+          >
+            <img src="../../assets/logo ST.png" alt="logo" />
+            <p>
+              Soluciones integrales para tu hogar: electricidad, carpintería,
+              plomería y más. ¡Todo lo que necesitas, en manos expertas!
+            </p>
+          </div>
+          <hr class="my-2 linea" />
+          <div
+            class="d-flex flex-column principalfooter align-items-center justify-content-center"
+          >
+            <p class="mb-0">@Copyright. All Equipo Rocket</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script>
+      (() => {
+        "use strict";
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll(".needs-validation");
+
+        // Loop over them and prevent submission
+        Array.from(forms).forEach((form) => {
+          form.addEventListener(
+            "submit",
+            (event) => {
+              if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add("was-validated");
+            },
+            false
+          );
+        });
+      })();
+    </script>
   </body>
 </html>
