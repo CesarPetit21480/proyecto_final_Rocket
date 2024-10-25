@@ -5,7 +5,48 @@
 
 }
 
-nav {
+/* nav {
     background: linear-gradient(90deg, rgb(204, 229, 255), rgb(153, 204, 255), rgb(229, 242, 255)) !important;
 
+} */
+
+.linea-divisoria {
+    display:block;
+    width: 2px;
+    height: 72px;
+    color: aqua;
+    text-align: center;
+}
+
+/* #profesionales {
+    background-color: #9fb0aa;
+    opacity: 0.1;
+} */
+
+.card {
+    width: 500px;
+    height: 300px;
+}
+
+/* .card-img-top {
+    width: 50% vh;
+    height: 200px;
+} */
+
+.section-padding {
+    padding-top: 140px;
+    padding-bottom: 140px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.section-title {
+    margin-top: 100px;
+    margin-bottom: 25px;
+}
+
+.section-title .line {
+    width: 60px;
+    height: 4px;
+    margin: 16 px auto 24 px auto;
 }
