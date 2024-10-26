@@ -41,11 +41,54 @@
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="../servicios/servicios.html"
-                  >Servicios</a
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
                 >
+                  Servicios</a
+                >
+
+                <ul class="dropdown-menu colorFooter p-3">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./../servicios/instalaciones-electricas.html"
+                      >Intalacion Electricas</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./../servicios/cerrajeria.html"
+                      >Cerrajería</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./../servicios/carpinteria.html"
+                      >Carpintería</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./../servicios/diseno-interiores.html"
+                      >diseño-interiores</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./../servicios/plomeria.html"
+                      >Plomeria</a
+                    >
+                  </li>
+                </ul>
               </li>
+
               <li class="nav-item">
                 <a class="nav-link" href="../acercaDe/acercaDe.html"
                   >Acerca de Nosotros</a
@@ -63,6 +106,8 @@
                 <a
                   class="nav-link d-flex flex-column align-items-center"
                   href="../login/login.html"
+                  data-bs-toggle="tooltip"
+                  title="Iniciar sesión"
                 >
                   <img
                     class="logoUsuario"
@@ -73,6 +118,8 @@
                 <a
                   class="nav-link d-flex flex-column align-items-center"
                   href="../register/register.html"
+                  data-bs-toggle="tooltip"
+                  title="Registracion"
                 >
                   <img
                     class="logoUsuario"
@@ -80,9 +127,12 @@
                     alt="Usuario"
                   />
                 </a>
+
                 <a
                   class="nav-link d-flex flex-column align-items-center"
                   href="../carrito/carrito.html"
+                  data-bs-toggle="tooltip"
+                  title="Carrito de Compras"
                 >
                   <img
                     class="logoUsuario"
@@ -175,7 +225,6 @@
         </div>
       </div>
     </main>
-
     <footer>
       <div class="w-100 colorFooter">
         <div class="secundaryfooter">
@@ -196,7 +245,7 @@
                   placeholder="Indicanos tu Email"
                 />
               </div>
-              <a class="mb-4 mt-4 m" href="./paginas/acercaDe/acercaDe.html"
+              <a class="mb-4 mt-4 m" href="../acercaDe/acercaDe.html"
                 >+ Informacion Sobre Nosotros</a
               >
 
@@ -212,16 +261,16 @@
                   for="flexCheckDefault"
                 >
                   He leido y acepto la politica de privacidad
-                  <a class="mb-4 mt-4" href="./paginas/error/error504.html"
+                  <a class="mb-4 mt-4" href="../error/error404.html"
                     >politica de Privacidad</a
                   >
                 </label>
               </div>
 
               <button
-                onclick="window.location.href='./paginas/error/error504.html';"
+                onclick="window.location.href='../error/error404.html';"
                 type="button btnNews"
-                class="btn btn-success"
+                class="btn btn-primary"
               >
                 QUIERO SUBCRIBIRME
               </button>
