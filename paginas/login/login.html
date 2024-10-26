@@ -100,20 +100,38 @@
     <!-- Login -->
     <main>
       <section>
-        <div class="container-fluid mt-3 d-flex">
+        <div class="container-fluid mt-4 d-flex">
           <div class="row w-100">
-            <div class="col-sm-12 col-md-6 col-lg-6 border d-flex justify-content-center align-items-center">
-              <img
-                src="../../assets/logo_2.webp"
-                alt="Logo de la pagina"
-                class="tamañoLogo"/>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+
+              <!-- <div class="mt-2 container d-flex justify-content-center align-items-center">
+                <img src="../../assets/Team_Rocket.png" alt="Equipo Rocket Pokemon" class="fotoEquipo">
+                <h3 class="m-0">Equipo Rocket</h3>
+                <img src="../../assets/pokebal.png" alt="Pokeball de Pokemon" class="m-0 pokeball">
+              </div> -->
+
+              <!-- <div class="container mt-2 d-flex justify-content-center align-items-center">
+                <img src="../../assets/logosinfondo.png" alt="Logo de la pagina con animaciones" 
+                class="fotoEquipo2">
+                <h3 class="m-0">Estoy para ayudarte</h3>
+                <img src="../../assets/logosinfondo.png" alt="Logo de la pagina con animaciones" 
+                class="m-0 pokeball">
+              </div> -->
+
+              <div class="mt-2 d-flex justify-content-center align-items-center">
+                <img src="../../assets/Team_Rocket.png" alt="Equipo Rocket Pokemon" class="fotoEquipo2">
+                <h3 class="m-0">Estoy para ayudarte</h3>
+                <img src="../../assets/logosinfondo.png" alt="Pokeball de Pokemon" class="m-0 pokeball2">
+              </div>
+              
+              <div class="mt-4 d-flex justify-content-center align-items-center">
+                <img src="../../assets/logo_2.webp" alt="Logo de la pagina web" class="tamañoLogo">
+              </div>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-6 border">
+
+            <div class="mt-4 col-sm-12 col-md-6 col-lg-6">
               <form class="d-flex justify-content-center flex-column">
                 <div class="mb-3">
-                  <div class="mb-2 d-flex justify-content-center align-items-center">
-                    <a href="../register/register.html">¿No tiene una cuenta?, registrese.</a>
-                  </div>
                   <label for="exampleInputEmail1" class="form-label input-login"
                     >Direccion de correo electronico</label>
                   <input
@@ -126,7 +144,8 @@
                     Nunca compartiremos su direccion de correo electronico.
                   </div>
                 </div>
-                <div class="mb-3">
+
+                <div class="mb-1">
                   <label
                     for="exampleInputPassword1"
                     class="form-label input-login">Contraseña</label>
@@ -135,58 +154,41 @@
                     class="form-control"
                     id="exampleInputPassword1" 
                     placeholder="Ingrese su contraseña"/>
-                    <div class="">
-                      <a href="../actualizarContraseña/actualizarContraseña.html" class="tmñoBoton2">Olvide mi contraseña</a>
+                    <div class="mt-2">
+                      <a href="../actualizarContraseña/actualizarContraseña.html" 
+                      class="tmñoBoton2">Olvide mi contraseña</a>
                     </div>
                 </div>
-                <div class="mb-3 form-check">
+
+                <!-- <div class="mb-2 form-check">
                   <input
                     type="checkbox"
                     class="form-check-input"
                     id="exampleCheck1"/>
                   <label class="form-check-label" for="exampleCheck1">Mostrar</label>
+                </div> -->
+
+                <div class="mt-1 d-flex justify-content-center align-items-center">
+                  <button type="submit" class="btn btn-primary m-3 tmñoBoton">
+                    Ingresar
+                  </button>
                 </div>
-                <button type="submit" class="btn btn-primary m-3 tmñoBoton">
-                  Ingresar
-                </button>
-                <div class="mt-3">                
-                  <a href="www.google.com" class="btn btn-primary d-flex justify-content-center 
-                  align-items-center tmñoBoton3">Continuar con Google
-                  <img src="../../assets/logo-google.png" alt="Logotipo de Google para la opcion 
-                  de continuar con Google" class="logoGoogle">
-                </a>
+
+                <div class="mt-1 d-flex justify-content-center align-items-center">              
+                    <a href="https://www.google.com/" class="btn btn-primary tmñoBoton3 d-flex justify-content-center align-items-center">Continuar con Google
+                      <img src="../../assets/logo-google.png" alt="Logotipo de Google para la opcion 
+                      de continuar con Google" class="logoGoogle">
+                    </a>
+                </div>
+
+                <div class="mt-2 mb-3 d-flex justify-content-center align-items-center">
+                  <a href="../register/register.html">¿No tiene una cuenta?, registrese.</a>
                 </div>
               </form>
             </div>
           </div>
         </div>
       </section>
-
-      <!-- <div class="container-fluid mt-3">
-    <div class="row">
-      <div class="col-sm-12 col-md-6 w-50 imagen">
-        <img src="../../assets/logo_2.webp" alt="Logo de la pagina" class="imagenIzquierda w-100 h-75">
-      </div>
-      <div class="col-sm-12 col-md-6 fw-bold w-50 formularioLogin">
-        <form class="ms-5 w-50">
-          <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label input-login">Ingrese su email</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <div id="emailHelp" class="form-text">Nunca compartiremos su direccion de correo electronico.</div>
-          </div>
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label input-login">Ingrese su contraseña</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
-          </div>
-          <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Mostrar</label>
-          </div>
-          <button type="submit" class="btn btn-outline-secondary">Ingresar</button>
-        </form>
-      </div>
-    </div>
-  </div> -->
 
       <script>
         src =
