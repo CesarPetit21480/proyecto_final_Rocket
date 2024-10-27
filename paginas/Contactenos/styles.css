@@ -2,15 +2,22 @@ iframe {
     padding-left: 50px;
 }
 
-
+/* 
 #direction {
     padding-top: 70px;
     padding-bottom: 140px;
     padding-left: 320px;
     padding-right: 120px;
+} */
+
+.titulo-mapa {
+    margin-top: 1000px;
+    margin-left: 80px;
 }
 
-
+iframe {
+    margin-top: 70px;
+}
 
 p {
     color: black;
@@ -18,4 +25,14 @@ p {
     a {
         color: black;
     }
+}
+
+.formulario {
+    background: rgb(119, 117, 154);
+    background: linear-gradient(
+      90deg,
+      rgb(253, 253, 253) 0%,
+      rgba(204, 214, 214, 1) 53%,
+      rgba(221, 229, 231, 1) 100%
+    );
 }
