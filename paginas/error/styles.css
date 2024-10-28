@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 *{
     box-sizing: border-box;
     padding: 0;
@@ -8,4 +12,206 @@
     width: 20%;
     height: 30%;
     margin: 100px;
+}
+
+/****************************************************
+********************** GENERALES  *******************
+*****************************************************/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+    --color-primary:#0A7994;
+    --color-secondary:#9fb0aa;
+    --color-third:#535353;
+}
+
+.--primary-text{
+        font-family: "Roboto", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+    }
+
+.--primary-text-b{
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+}
+.--secon-text{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  font-variation-settings:"wdth" 100;
+
+}
+.--secon-text{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: bold;
+    font-variation-settings:"wdth" 100;
+}
+.moustro{
+   width: 200px;
+}
+.cuatro{
+    width: 150px;
+    margin-left: -30px;
+}
+
+
+.parpado-izq{
+    z-index: 2;
+    background-color: #83b777;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-left: -5em;
+    margin-top: .8em;
+    position: absolute;
+    animation: parpadeo-izq 2s infinite;
+}
+.ojo-izq{
+    z-index: 1;
+    background-color: #333333;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-left: -5em;
+    margin-top: -1.5em;
+    position: absolute;
+    .brillo-ojo-izq{
+        background-color: white;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin-left: 5px;
+        margin-top: 3px;
+        position: relative;
+    }
+}
+
+@keyframes parpadeo-izq{
+    0% {
+        width: 23px;
+        height: 23px;
+        margin-top: -1.5em;
+    }
+    50% {
+        width: 22px;
+        height: 23px;
+        margin-top: -3em;
+    }
+    50% {
+        width: 29px;
+        height: 23px;
+        margin-top: -3em;
+    }
+    100% {
+        width: 29px;
+    height: 23px;
+        margin-top: -1.5em;
+    }
+  }
+
+
+
+
+
+.parpado-der{
+    background-color:#83b777;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-left: 90px;
+    margin-top: -1em;
+    position: absolute;
+    z-index: 2;
+    animation: parpadeo-der 2s infinite;
+
+}
+
+
+.ojo-derecho{
+    z-index: 1;
+    background-color: #333333;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-left: 90px;
+    margin-top: -1.5em;
+    position: absolute;
+    .brillo-ojo-der{
+        background-color: white;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin-left: 5px;
+        margin-top: 3px;
+        position: relative;
+    }
+}
+
+@keyframes parpadeo-der{
+    0% {
+        width: 23px;
+        height: 23px;
+        margin-top: -1.5em;
+    }
+    50% {
+        width: 22px;
+    height: 23px;
+        margin-top: -3em;
+    }
+    50% {
+        width: 29px;
+        height: 23px;
+        margin-top: -3em;
+    }
+    100% {
+        width: 29px;
+       height: 23px;
+        margin-top: -1.5em;
+    }
+  }
+
+  .engranes{
+    position: relative;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    .pequeno{
+        width: 70px;
+        height: 70px;
+        margin-top: -1em;
+        animation: giro 15s infinite;
+    }
+    .grande{
+        width: 100px;
+        height: 100px;
+        margin-left: -2em;
+        animation: giro 15s infinite;
+    }
+  }
+
+@keyframes giro{
+    0% {
+        transform: rotate(0deg);
+    }
+    
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+
+
+.texto{
+    width: 100%;
+    background-color: red;
+}
+.texto-error{
+    
+    font-size: 200px;
+    
 }
