@@ -63,13 +63,13 @@
 .parpado-izq{
     z-index: 2;
     background-color: #83b777;
-    width: 22px;
-    height: 20px;
+    width: 23px;
+    height: 23px;
     border-radius: 50%;
     margin-left: -3.5em;
     margin-top: .8em;
     position: absolute;
-    animation: parpadeo-izq 2s infinite;
+    animation: parpadeo-izq 1.5s infinite;
 }
 .ojo-izq{
     z-index: 1;
@@ -99,13 +99,13 @@
         
     }
     50% {
-        width: 22px;
+        width: 23px;
         height: 23px;
         margin-top: -3em;
         
     }
     50% {
-        width: 22px;
+        width: 23px;
         height: 23px;
         margin-top: -3em;
         
@@ -114,7 +114,7 @@
     
     
     100% {
-        width: 29px;
+        width: 23px;
     height: 23px;
         margin-top: -1.5em;
         background-color:rgba(253,187,45,0) 100% ; 
@@ -127,14 +127,14 @@
 
 .parpado-der{
     background-color:#83b777;
-    width: 20px;
-    height: 20px;
+    width: 21px;
+    height: 21px;
     border-radius: 50%;
     margin-left: 1.9em;
-    margin-top: -1.5em;
+    margin-top: -1.4em;
     position: absolute;
     z-index: 2;
-    animation: parpadeo-der 2s infinite;
+    animation: parpadeo-der 1.5s infinite;
 
 }
 
