@@ -16,15 +16,14 @@ iframe {
 }
 
 iframe {
-    margin-top: 70px;
+    padding-left: 30px;
+    margin-top: 10px;
 }
 
-p {
-    color: black;
-
-    a {
-        color: black;
-    }
+.Ubicación, h3, p {
+  padding-left: 30px;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 .formulario {
@@ -35,4 +34,5 @@ p {
       rgba(204, 214, 214, 1) 53%,
       rgba(221, 229, 231, 1) 100%
     );
+    
 }
