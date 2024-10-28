@@ -41,11 +41,54 @@
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="../servicios/servicios.html"
-                  >Servicios</a
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
                 >
+                  Servicios</a
+                >
+
+                <ul class="dropdown-menu colorFooter p-3">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./../servicios/instalaciones-electricas.html"
+                      >Intalacion Electricas</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./../servicios/cerrajeria.html"
+                      >Cerrajería</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./../servicios/carpinteria.html"
+                      >Carpintería</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./../servicios/diseno-interiores.html"
+                      >diseño-interiores</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./../servicios/plomeria.html"
+                      >Plomeria</a
+                    >
+                  </li>
+                </ul>
               </li>
+
               <li class="nav-item">
                 <a class="nav-link" href="#">Acerca de Nosotros</a>
               </li>
@@ -61,6 +104,8 @@
                 <a
                   class="nav-link d-flex flex-column align-items-center"
                   href="../login/login.html"
+                  data-bs-toggle="tooltip"
+                  title="Iniciar sesión"
                 >
                   <img
                     class="logoUsuario"
@@ -71,6 +116,8 @@
                 <a
                   class="nav-link d-flex flex-column align-items-center"
                   href="../register/register.html"
+                  data-bs-toggle="tooltip"
+                  title="Registracion"
                 >
                   <img
                     class="logoUsuario"
@@ -82,6 +129,8 @@
                 <a
                   class="nav-link d-flex flex-column align-items-center"
                   href="../carrito/carrito.html"
+                  data-bs-toggle="tooltip"
+                  title="Carrito de Compras"
                 >
                   <img
                     class="logoUsuario"
@@ -97,73 +146,90 @@
     </header>
 
     <!-- Portada con carousel -->
-   <section class="portada">
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="3000">
-          <img src="../../assets/images/pikaso_edit.png" class="d-block w-100" alt="herramienta">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>ESTAMOS PARA AYUDARTE</h5>
-            <p>Servicios profesionales para tu hogar</p>
+    <section class="portada">
+      <div
+        id="carouselExampleAutoplaying"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img
+              src="../../assets/images/pikaso_edit.png"
+              class="d-block w-100"
+              alt="herramienta"
+            />
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img
+              src="../../assets/images/male-electrician.png"
+              class="d-block w-100"
+              alt="electricista"
+            />
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img
+              src="../../assets/images/female-plumber.png"
+              class="d-block w-100"
+              alt="plomero"
+            />
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img
+              src="../../assets/images/cerrajería.png"
+              class="d-block w-100"
+              alt="cerraduras"
+            />
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img
+              src="../../assets/images/carpenter.png"
+              class="d-block w-100"
+              alt="carpintería"
+            />
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img
+              src="../../assets/images/interior-designer.png"
+              class="d-block w-100"
+              alt="diseño de interiores"
+            />
           </div>
         </div>
-        <div class="carousel-item" data-bs-interval="3000">
-          <img src="../../assets/images/male-electrician.png" class="d-block w-100" alt="electricista">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Electricidad</h5>
-            <p>Soluciones Técnicas para Tu Hogar</p>
-          </div>
-        </div>
-        <div class="carousel-item" data-bs-interval="3000">
-          <img src="../../assets/images/female-plumber.png" class="d-block w-100" alt="plomero">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Plomería</h5>
-            <p>Servicios Esenciales para el Bienestar del Hogar</p>
-          </div>
-        </div>
-        <div class="carousel-item" data-bs-interval="3000">
-          <img src="../../assets/images/cerrajería.png" class="d-block w-100" alt="cerraduras">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Cerrajería</h5>
-            <p>Seguridad y Funcionalidad</p>
-          </div>
-        </div>
-        <div class="carousel-item" data-bs-interval="3000">
-          <img src="../../assets/images/carpenter.png" class="d-block w-100" alt="carpintería">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Carpintería</h5>
-            <p>Diseño y Mantenimiento de Muebles y Estructuras</p>
-          </div>
-        </div>
-        <div class="carousel-item" data-bs-interval="3000">
-          <img src="../../assets/images/interior-designer.png" class="d-block w-100" alt="diseño de interiores">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Diseño de interiores</h5>
-            <p>Transformación y Optimización del Espacio</p>
-          </div>
-        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-    <div class="linea-divisoria">
-       
-    </div>
+      <div class="linea-divisoria"></div>
 
-    <!-- Texto sobre nosotros + valores de la empresa -->
-   </section>
-    <section id="About" class="min-vh-100 d-flex align-items-center text-center mt-5">
+      <!-- Texto sobre nosotros + valores de la empresa -->
+    </section>
+    <section
+      id="About"
+      class="min-vh-100 d-flex align-items-center text-center mt-5"
+    >
       <div class="container">
         <div class="row d-flex justify-content-center">
           <div class="col-10">
             <h6>
-              <small class="text-body-secondary">BIENVENIDOS A "ESTAMOS PARA AYUDARTE"</small>
+              <small class="text-body-secondary"
+                >BIENVENIDOS A "ESTAMOS PARA AYUDARTE"</small
+              >
             </h6>
             <h2 class="p-4">¿Quiénes somos?</h2>
             <p>
@@ -176,26 +242,51 @@
               funcional.
             </p>
             <section class="container">
-            <h3 class="titulo-valores section-title">Nuestros valores</h3>
-            <div class="row">
-              <div class="col-4">
-                <img src="../../assets/images/award-line.png" alt="icono1" class="pt-2 mb-0">
+              <h3 class="titulo-valores section-title">Nuestros valores</h3>
+              <div class="row">
+                <div class="col-4">
+                  <img
+                    src="../../assets/images/award-line.png"
+                    alt="icono1"
+                    class="pt-2 mb-0"
+                  />
                   <h5 class="pt-3 mb-3">Compromiso con la Calidad</h5>
-                  <p>Nos esforzamos por ofrecer servicios de alta calidad a través de profesionales calificados y experimentados, asegurando que cada trabajo esté a la altura de las expectativas de nuestros clientes.</p>
+                  <p>
+                    Nos esforzamos por ofrecer servicios de alta calidad a
+                    través de profesionales calificados y experimentados,
+                    asegurando que cada trabajo esté a la altura de las
+                    expectativas de nuestros clientes.
+                  </p>
+                </div>
+                <div class="col-4">
+                  <img
+                    src="../../assets/images/refund-2-line.png"
+                    alt=""
+                    class="pt-2 mb-0"
+                  />
+                  <h5 class="pt-3 mb-3">Confiabilidad y Transparencia</h5>
+                  <p>
+                    Nos comprometemos a ser claros y transparentes en todo
+                    momento, desde la cotización hasta la finalización del
+                    servicio, cumpliendo con los tiempos y costos acordados.
+                  </p>
+                </div>
+                <div class="col-4">
+                  <img
+                    src="../../assets/images/lightbulb-line.png"
+                    alt=""
+                    class="pt-2 mb-0"
+                  />
+                  <h5 class="pt-3 mb-3">Innovación y Adaptabilidad</h5>
+                  <p>
+                    Nos mantenemos actualizados con las últimas tendencias y
+                    tecnologías en cada sector (electricidad, carpintería,
+                    diseño de interiores, etc.), para ofrecer soluciones
+                    modernas, eficientes y sostenibles
+                  </p>
+                </div>
               </div>
-              <div class="col-4">
-                <img src="../../assets/images/refund-2-line.png" alt="" class="pt-2 mb-0">
-                <h5 class="pt-3 mb-3">Confiabilidad y Transparencia</h5>
-                <p>Nos comprometemos a ser claros y transparentes en todo momento, desde la cotización hasta la finalización del servicio, cumpliendo con los tiempos y costos acordados.</p>
-              </div>
-              <div class="col-4">
-                <img src="../../assets/images/lightbulb-line.png" alt="" class="pt-2 mb-0">
-                <h5 class="pt-3 mb-3">Innovación y Adaptabilidad</h5>
-                <p>Nos mantenemos actualizados con las últimas tendencias y tecnologías en cada sector (electricidad, carpintería, diseño de interiores, etc.), para ofrecer soluciones modernas, eficientes y sostenibles</p>
-              </div>
-            </div>
-            
-          </section>
+            </section>
           </div>
         </div>
       </div>
@@ -208,6 +299,7 @@
     </div>
       <div class="row row-cols-1 row-cols-md-2 g-4">
         <div class="col">
+<<<<<<< HEAD
           <div class="card border-secondary mb-3 justify-content-center align-items-center">
             <img src="../../assets/images/Aryan.png" class="card-img-top" alt="Aryan">
             <div class="card-body">
@@ -218,23 +310,59 @@
                 principales servicios: cambio, instalación y reparación de
                 cerraduras, apertura de puertas, duplicación de llaves,
                 instalación de sistemas de seguridad avanzados.</p>
+=======
+          <div class="card">
+            <img
+              src="../../assets/images/Aryan.png"
+              class="card-img-top"
+              alt="Aryan"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Aryan – El Guardián de Tu Seguridad</h5>
+              <p class="card-text">
+                Cerrajería – Seguridad y Funcionalidad: Ya sea que necesites un
+                nuevo sistema de seguridad, cambiar una cerradura antigua o
+                simplemente entrar en tu casa sin destrozar la puerta, él tiene
+                la solución rápida y efectiva. Sus principales servicios:
+                cambio, instalación y reparación de cerraduras, apertura de
+                puertas, duplicación de llaves, instalación de sistemas de
+                seguridad avanzados.
+              </p>
+>>>>>>> origin/development
             </div>
           </div>
         </div>
         <div class="col">
+<<<<<<< HEAD
           <div class="card border-secondary mb-3 justify-content-center align-items-center">
             <img src="../../assets/images/gaston1.png" class="card-img-top" alt="César">
             <div class="card-body">
               <h5 class="card-title d-flex justify-content-center align-items-center bg-secondary-subtle">César – El Maestro de la Energía</h5>
               <p class="card-text">Electricidad – Soluciones Técnicas para Tu Hogar: Ya sea para renovar la iluminación de tu hogar, darle vida a tus
+=======
+          <div class="card">
+            <img
+              src="../../assets/images/gaston1.png"
+              class="card-img-top"
+              alt="César"
+            />
+            <div class="card-body">
+              <h5 class="card-title">César – El Maestro de la Energía</h5>
+              <p class="card-text">
+                Electricidad – Soluciones Técnicas para Tu Hogar: Ya sea para
+                renovar la iluminación de tu hogar, darle vida a tus
+>>>>>>> origin/development
                 electrodomésticos o asegurar que todo funcione a la perfección,
-                los servicios que ofrece son: instalación de sistemas eléctricos,
-                reparación y mantenimiento de cableado, actualización de tableros
-                eléctricos, mantenimiento de electrodomésticos.</p>
+                los servicios que ofrece son: instalación de sistemas
+                eléctricos, reparación y mantenimiento de cableado,
+                actualización de tableros eléctricos, mantenimiento de
+                electrodomésticos.
+              </p>
             </div>
           </div>
         </div>
         <div class="col">
+<<<<<<< HEAD
           <div class="card border-secondary mb-3 justify-content-center align-items-center">
             <img src="../../assets/images/eduardo.png" class="card-img-top" alt="Eduardo">
             <div class="card-body">
@@ -243,22 +371,56 @@
                 construcción y reparación de muebles a medida, instalación de
                 puertas y ventanas, montajes de pisos de madera, construcción de
                 otras estructuras.</p>
+=======
+          <div class="card">
+            <img
+              src="../../assets/images/eduardo.png"
+              class="card-img-top"
+              alt="Eduardo"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Eduardo – El Artesano de tus Sueños</h5>
+              <p class="card-text">
+                Carpintería – Diseño y Mantenimiento de Muebles y Estructuras:
+                Ya sea que busques un toque rústico o un diseño moderno, sus
+                manos son las que le dan vida a tus espacios. Eduardo te ayuda
+                con la construcción y reparación de muebles a medida,
+                instalación de puertas y ventanas, montajes de pisos de madera,
+                construcción de otras estructuras.
+              </p>
+>>>>>>> origin/development
             </div>
           </div>
         </div>
         <div class="col">
+<<<<<<< HEAD
           <div class="card border-secondary mb-3 justify-content-center align-items-center">
             <img src="../../assets/images/Nadir.png" class="card-img-top" alt="Nadir">
             <div class="card-body">
               <h5 class="card-title d-flex justify-content-center align-items-center bg-secondary-subtle">Nadir – El Domador de las Tuberías</h5>
               <p class="card-text">Plomería – Servicios Esenciales para el Bienestar del Hogar: Desde destapar tuberías hasta instalar ese jacuzzi que siempre
+=======
+          <div class="card">
+            <img
+              src="../../assets/images/Nadir.png"
+              class="card-img-top"
+              alt="Nadir"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Nadir – El Domador de las Tuberías</h5>
+              <p class="card-text">
+                Plomería – Servicios Esenciales para el Bienestar del Hogar:
+                Desde destapar tuberías hasta instalar ese jacuzzi que siempre
+>>>>>>> origin/development
                 soñaste, con él, el agua va justo a donde debe ir. Te damos una
                 mano con la reparación de fugas de agua, destape de cañerías,
-                mantenimiento de calefones, instalación de sanitarios y grifería,
-                montaje de tuberías y más...</p>
+                mantenimiento de calefones, instalación de sanitarios y
+                grifería, montaje de tuberías y más...
+              </p>
             </div>
           </div>
         </div>
+<<<<<<< HEAD
       </div>
       <div class="row d-flex justify-content-center align-items-center mt-4">
       <div class="col-6">
@@ -272,12 +434,31 @@
               decoración, reformas integrales para remodelaciones, gestionamos
               todos los aspectos del diseño incluyendo proveedores, tiempos de
               entrega y presupuestos.</p>
+=======
+        <div class="col">
+          <div class="card">
+            <img
+              src="../../assets/images/romi.png"
+              class="card-img-top"
+              alt="Romina"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Romina – La Artista de Espacios</h5>
+              <p class="card-text">
+                Diseño de interiores – Transformación y Optimización del
+                Espacio: Con su ojo creativo y su capacidad para transformar
+                cualquier rincón, es la aliada perfecta para darle vida a tus
+                espacios. Te proporcionamos asistencia en planificar tus
+                espacios, asesorar en decoración, reformas integrales para
+                remodelaciones, gestionamos todos los aspectos del diseño
+                incluyendo proveedores, tiempos de entrega y presupuestos.
+              </p>
+>>>>>>> origin/development
             </div>
           </div>
         </div>
       </div>
     </section>
-    
     <footer>
       <div class="w-100 colorFooter">
         <div class="secundaryfooter">
@@ -298,9 +479,7 @@
                   placeholder="Indicanos tu Email"
                 />
               </div>
-              <a class="mb-4 mt-4 m" href="./paginas/acercaDe/acercaDe.html"
-                >+ Informacion Sobre Nosotros</a
-              >
+              <a class="mb-4 mt-4 m" href="#">+ Informacion Sobre Nosotros</a>
 
               <div class="form-check">
                 <input
@@ -314,21 +493,23 @@
                   for="flexCheckDefault"
                 >
                   He leido y acepto la politica de privacidad
-                  <a class="mb-4 mt-4" href="./paginas/error/error504.html"
+                  <a class="mb-4 mt-4" href="../error/error404.html"
                     >politica de Privacidad</a
                   >
                 </label>
               </div>
 
               <button
-                onclick="window.location.href='./paginas/error/error504.html';"
+                onclick="window.location.href='../error/error404.html';"
                 type="button btnNews"
                 class="btn btn-primary"
               >
                 QUIERO SUBCRIBIRME
               </button>
             </div>
-            <div class="col-md-3 col-lg-4 col-sm-6 d-flex flex-column align-items-center">
+            <div
+              class="col-md-3 col-lg-4 col-sm-6 d-flex flex-column align-items-center"
+            >
               <h3>Síguenos</h3>
               <div class="contact-info">
                 <div class="contact-item">
@@ -337,7 +518,9 @@
                     alt="Icono"
                     style="width: 50px; height: 50px"
                   />
-                  <p class="p-2"><a href="https:facebook.com"  target="_blank">Facebook</a></p>
+                  <p class="p-2">
+                    <a href="https:facebook.com" target="_blank">Facebook</a>
+                  </p>
                 </div>
                 <div class="contact-item">
                   <img
@@ -345,7 +528,9 @@
                     alt="Icono"
                     style="width: 50px; height: 50px"
                   />
-                  <p class="p-2"><a href="https:instagram.com" target="_blank">Instagram</a></p>
+                  <p class="p-2">
+                    <a href="https:instagram.com" target="_blank">Instagram</a>
+                  </p>
                 </div>
                 <div class="contact-item">
                   <img
@@ -353,7 +538,9 @@
                     alt="Icono"
                     style="width: 50px; height: 50px"
                   />
-                  <p class="p-2"><a href="https://x.com/" target="_blank">Twitter</a></p>
+                  <p class="p-2">
+                    <a href="https://x.com/" target="_blank">Twitter</a>
+                  </p>
                 </div>
               </div>
             </div>
@@ -395,26 +582,26 @@
           </div>
         </div>
         <div class="d-flex flex-column align-items-center">
-        <hr class="my-2 linea">
-        <div
-          class="d-flex flex-column principalfooter align-items-center justify-content-center"
-        >
-          <img src="../../assets/logo ST.png" alt="logo" />
-          <p>
-            Soluciones integrales para tu hogar: electricidad, carpintería,
-            plomería y más. ¡Todo lo que necesitas, en manos expertas!
-          </p>
+          <hr class="my-2 linea" />
+          <div
+            class="d-flex flex-column principalfooter align-items-center justify-content-center"
+          >
+            <img src="../../assets/logo ST.png" alt="logo" />
+            <p>
+              Soluciones integrales para tu hogar: electricidad, carpintería,
+              plomería y más. ¡Todo lo que necesitas, en manos expertas!
+            </p>
+          </div>
+          <hr class="my-2 linea" />
+          <div
+            class="d-flex flex-column principalfooter align-items-center justify-content-center"
+          >
+            <p class="mb-0">@Copyright. All Equipo Rocket</p>
+          </div>
         </div>
-        <hr class="my-2 linea">      
-        <div
-          class="d-flex flex-column principalfooter align-items-center justify-content-center"
-        >      
-        <p class="mb-0">@Copyright. All Equipo Rocket</p>
-          </p>
-        </div>
-      </div>
       </div>
     </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -422,4 +609,3 @@
     ></script>
   </body>
 </html>
-

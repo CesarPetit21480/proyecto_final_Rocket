@@ -30,9 +30,24 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="./paginas/servicios/servicios.html">Servicios</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Servicios</a>
+              </a>
+              <ul class="dropdown-menu colorFooter p-3">
+                <li><a class="dropdown-item" href="./paginas/servicios/instalaciones-electricas.html">Intalacion
+                    Electricas</a></li>
+                <li><a class="dropdown-item" href="./paginas/servicios/cerrajeria.html">Cerrajería</a></li>
+                <li><a class="dropdown-item" href="./paginas/servicios/carpinteria.html">Carpintería</a></li>
+                <li><a class="dropdown-item" href="./paginas/servicios/diseno-interiores.html">diseño-interiores</a>
+                </li>
+                <li><a class="dropdown-item" href="./paginas/servicios/plomeria.html">Plomeria</a></li>
+
+
+              </ul>
             </li>
+
             <li class="nav-item">
               <a class="nav-link" href="./paginas/acercaDe/acercaDe.html">Acerca de Nosotros</a>
             </li>
@@ -62,51 +77,125 @@
     </nav>
   </header>
   <main>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-      consectetur suscipit a beatae autem natus obcaecati consequuntur maxime
-      cum aperiam officia voluptatum, illo excepturi quaerat eaque
-      exercitationem reprehenderit asperiores perspiciatis! Lorem ipsum dolor
-      sit amet consectetur adipisicing elit. Accusamus consectetur suscipit a
-      beatae autem natus obcaecati consequuntur maxime cum aperiam officia
-      voluptatum, illo excepturi quaerat eaque exercitationem reprehenderit
-      asperiores perspiciatis! Lorem ipsum dolor sit amet consectetur
-      adipisicing elit. Accusamus consectetur suscipit a beatae autem natus
-      obcaecati consequuntur maxime cum aperiam officia voluptatum, illo
-      excepturi quaerat eaque exercitationem reprehenderit asperiores
-      perspiciatis! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Accusamus consectetur suscipit a beatae autem natus obcaecati
-      consequuntur maxime cum aperiam officia voluptatum, illo excepturi
-      quaerat eaque exercitationem reprehenderit asperiores perspiciatis!
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-      consectetur suscipit a beatae autem natus obcaecati consequuntur maxime
-      cum aperiam officia voluptatum, illo excepturi quaerat eaque
-      exercitationem reprehenderit asperiores perspiciatis! Lorem ipsum dolor
-      sit amet consectetur adipisicing elit. Accusamus consectetur suscipit a
-      beatae autem natus obcaecati consequuntur maxime cum aperiam officia
-      voluptatum, illo excepturi quaerat eaque exercitationem reprehenderit
-      asperiores perspiciatis! Lorem ipsum dolor sit amet consectetur
-      adipisicing elit. Accusamus consectetur suscipit a beatae autem natus
-      obcaecati consequuntur maxime cum aperiam officia voluptatum, illo
-      excepturi quaerat eaque exercitationem reprehenderit asperiores
-      perspiciatis! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Accusamus consectetur suscipit a beatae autem natus obcaecati
-      consequuntur maxime cum aperiam officia voluptatum, illo excepturi
-      quaerat eaque exercitationem reprehenderit asperiores perspiciatis!
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-      consectetur suscipit a beatae autem natus obcaecati consequuntur maxime
-      cum aperiam officia voluptatum, illo excepturi quaerat eaque
-      exercitationem reprehenderit asperiores perspiciatis! Lorem ipsum dolor
-      sit amet consectetur adipisicing elit. Accusamus consectetur suscipit a
-      beatae autem natus obcaecati consequuntur maxime cum aperiam officia
-      voluptatum, illo excepturi quaerat eaque exercitationem reprehenderit
-      asperiores perspiciatis! Lorem ipsum dolor sit amet consectetur
-      adipisicing elit. Accusamus consectetur suscipit a beatae autem natus
-      obcaecati consequuntur maxime cum aperiam officia voluptatum, illo
-      excepturi quaerat eaque exercitationem reprehenderit asperiores
-      perspiciatis!
-    </p>
+    <!-- BANNER -->
+    <div class="bg-body-primary">
+      <img src="./assets/homeFirst.jpg" class="img-fluid" alt="Banner de inicio" aria-placeholder="" />
+    </div>
+
+    <!-- SECCION INTRO -->
+    <section class="w-50 mx-auto text-center pt-4" id="intro">
+      <h1 class="p-3 border-top border-3">
+        <span class="text-primary">ESTOY PARA AYUDARTE</span>
+      </h1>
+
+      <h2 class="p-1 fs-4">
+        Tu aliado de confianza para todas las reparaciones y mejoras del
+        hogar
+      </h2>
+
+      <p>
+        Nuestro sitio web conecta a los
+        <span class="text-primary">mejores profesionales</span> en plomería,
+        albañilería, diseño de interiores, electricidad y cerrajería,
+        ofreciendo soluciones rápidas, efectivas y de alta calidad. Con un
+        enfoque en la
+        <span class="text-primary">satisfaccion del cliente</span>, estamos
+        aquí para hacer que tu hogar sea un lugar seguro, cómodo y funcional
+      </p>
+    </section>
+
+    <!-- SERVICIOS -->
+
+    <section class="p-4">
+      <div class="container">
+        <div class="row w-75 mx-auto servicio-row d-flex align-items-center justify-content-center">
+          <div class="p-2 col-sm-12 col-md-12 col-lg-6 d-flex">
+            <div class="card">
+              <img class="cardLogo" src="./assets/albañilera.jpg" class="card-img-top" alt="Albañileria" />
+              <div class="card-body text-center">
+                <h5 class="card-title">Albañilería</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and
+                  make up the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-2 col-sm-12 col-md-12 col-lg-6 d-flex">
+            <div class="card">
+              <img class="cardLogo" src="./assets/plomeria.jpg" class="card-img-top" alt="Plomeria" />
+              <div class="card-body text-center">
+                <h5 class="card-title">Plomería</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and
+                  make up the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-2 col-sm-12 col-md-12 col-lg-6 d-flex">
+            <div class="card">
+              <img class="cardLogo" src="./assets/electricidad.jpg" class="card-img-top" alt="Electricidad" />
+              <div class="card-body text-center">
+                <h5 class="card-title">Electricidad</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and
+                  make up the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-2 col-sm-12 col-md-12 col-lg-6 d-flex">
+            <div class="card">
+              <img class="cardLogo" src="./assets/diseño interiores.jpg" class="card-img-top"
+                alt="Diseño de interiores" />
+              <div class="card-body text-center">
+                <h5 class="card-title">Diseño de interiores</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and
+                  make up the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-2 col-sm-12 col-md-12 col-lg-6 d-flex">
+            <div class="card">
+              <img class="cardLogo" src="./assets/cerrajeria.jpg" class="card-img-top" alt="Cerrajería" />
+              <div class="card-body text-center">
+                <h5 class="card-title">Cerrajería</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and
+                  make up the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OFERTAS -->
+    <section class="w-50 mx-auto text-center pt-4" id="ofertas">
+      <h1 class="p-3 border-top border-3">
+        <span class="text-primary">OFERTAS MENSUALES</span>
+      </h1>
+
+      <h2 class="p-1 fs-4">
+        Busca entre nuestras mejores ofertas del mercado, y aprovecha
+        <span>DESCUENTAZOS</span> este mes
+      </h2>
+    </section>
   </main>
+
 
   <footer>
     <div class="w-100 colorFooter">
@@ -125,11 +214,11 @@
               <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
               <label class="form-check-label mb-3 ms-0" for="flexCheckDefault">
                 He leido y acepto la politica de privacidad
-                <a class="mb-4 mt-4" href="./paginas/error/error504.html">politica de Privacidad</a>
+                <a class="mb-4 mt-4" href="./paginas/error/error404.html">politica de Privacidad</a>
               </label>
             </div>
 
-            <button onclick="window.location.href='./paginas/error/error504.html';" type="button btnNews"
+            <button onclick="window.location.href='./paginas/error/error404.html';" type="button btnNews"
               class="btn btn-primary">
               QUIERO SUBCRIBIRME
             </button>

@@ -49,9 +49,54 @@
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Servicios</a>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Servicios</a
+                >
+
+                <ul class="dropdown-menu colorFooter p-3">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./../servicios/instalaciones-electricas.html"
+                      >Intalacion Electricas</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./../servicios/cerrajeria.html"
+                      >Cerrajería</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./../servicios/carpinteria.html"
+                      >Carpintería</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./../servicios/diseno-interiores.html"
+                      >diseño-interiores</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./../servicios/plomeria.html"
+                      >Plomeria</a
+                    >
+                  </li>
+                </ul>
               </li>
+
               <li class="nav-item">
                 <a class="nav-link" href="../acercaDe/acercaDe.html"
                   >Acerca de Nosotros</a
@@ -63,12 +108,13 @@
                 >
               </li>
             </ul>
-
             <ul class="navbar-nav mb-2 mb-lg-0">
               <li class="nav-item d-flex">
                 <a
                   class="nav-link d-flex flex-column align-items-center"
                   href="../login/login.html"
+                  data-bs-toggle="tooltip"
+                  title="Iniciar sesión"
                 >
                   <img
                     class="logoUsuario"
@@ -79,6 +125,8 @@
                 <a
                   class="nav-link d-flex flex-column align-items-center"
                   href="../register/register.html"
+                  data-bs-toggle="tooltip"
+                  title="Registracion"
                 >
                   <img
                     class="logoUsuario"
@@ -86,9 +134,12 @@
                     alt="Usuario"
                   />
                 </a>
+
                 <a
                   class="nav-link d-flex flex-column align-items-center"
                   href="../carrito/carrito.html"
+                  data-bs-toggle="tooltip"
+                  title="Carrito de Compras"
                 >
                   <img
                     class="logoUsuario"
@@ -136,9 +187,7 @@
  --------------------------------          CUERPO        -------------------------------
  --------------------------------------------------------------------------------------->
     <main >     
-      <section class="cuerpo ">
-
-        
+      <section class="cuerpo">        
         <h1 class="--primary-text-b ">Cerrajería</h1>
         <h2>________</h2>
        <p class="--secon-text ">Brindamos soluciones rápidas y seguras para cualquier problema relacionado con cerraduras, llaves y sistemas de seguridad. Ya sea que necesites un cambio de cerradura, apertura de puertas o un servicio de emergencia, nuestros cerrajeros expertos están disponibles para ayudarte en cualquier momento. </p>
@@ -380,49 +429,25 @@
   <div class="w-100 colorFooter">
     <div class="secundaryfooter">
       <div class="row">
-        <div
-          class="d-flex flex-column align-items-center col-lg-4 col-sm-6 text-center"
-        >
+        <div class="d-flex flex-column align-items-center col-lg-4 col-sm-6 text-center">
           <h3>SUSCRIBETE A LAS NEWSLETTER</h3>
           <h5>Recibe ofertas, novedades y mucho mas</h5>
           <div class="mb-3 imputNew">
-            <label for="controlInput" class="form-label"
-              >Email address</label
-            >
-            <input
-              type="email"
-              class="form-control"
-              id="controlInput"
-              placeholder="Indicanos tu Email"
-            />
+            <label for="controlInput" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="controlInput" placeholder="Indicanos tu Email" />
           </div>
-          <a class="mb-4 mt-4 m" href="./paginas/acercaDe/acercaDe.html"
-            >+ Informacion Sobre Nosotros</a
-          >
+          <a class="mb-4 mt-4 m" href="../acercaDe/acercaDe.html">+ Informacion Sobre Nosotros</a>
 
           <div class="form-check">
-            <input
-              class="form-check-input"
-              type="checkbox"
-              value=""
-              id="flexCheckDefault"
-            />
-            <label
-              class="form-check-label mb-3 ms-0"
-              for="flexCheckDefault"
-            >
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+            <label class="form-check-label mb-3 ms-0" for="flexCheckDefault">
               He leido y acepto la politica de privacidad
-              <a class="mb-4 mt-4" href="./paginas/error/error504.html"
-                >politica de Privacidad</a
-              >
+              <a class="mb-4 mt-4" href="../error/error404.html">politica de Privacidad</a>
             </label>
           </div>
 
-          <button
-            onclick="window.location.href='./paginas/error/error504.html';"
-            type="button btnNews"
-            class="btn btn-success"
-          >
+          <button onclick="window.location.href='../error/error404.html';" type="button btnNews"
+            class="btn btn-primary">
             QUIERO SUBCRIBIRME
           </button>
         </div>
@@ -430,62 +455,34 @@
           <h3>Síguenos</h3>
           <div class="contact-info">
             <div class="contact-item">
-              <img
-                src="../../assets/communication.png"
-                alt="Icono"
-                style="width: 50px; height: 50px"
-              />
-              <p class="p-2"><a href="https:facebook.com"  target="_blank">Facebook</a></p>
+              <img src="../../assets/communication.png" alt="Icono" style="width: 50px; height: 50px" />
+              <p class="p-2"><a href="https:facebook.com" target="_blank">Facebook</a></p>
             </div>
             <div class="contact-item">
-              <img
-                src="../../assets/instagram.png"
-                alt="Icono"
-                style="width: 50px; height: 50px"
-              />
+              <img src="../../assets/instagram.png" alt="Icono" style="width: 50px; height: 50px" />
               <p class="p-2"><a href="https:instagram.com" target="_blank">Instagram</a></p>
             </div>
             <div class="contact-item">
-              <img
-                src="../../assets/twitter.png"
-                alt="Icono"
-                style="width: 50px; height: 50px"
-              />
+              <img src="../../assets/twitter.png" alt="Icono" style="width: 50px; height: 50px" />
               <p class="p-2"><a href="https://x.com/" target="_blank">Twitter</a></p>
             </div>
           </div>
         </div>
-        <div
-          class="col-md-3 col-lg-4 col-sm-6 d-flex flex-column align-items-center"
-        >
+        <div class="col-md-3 col-lg-4 col-sm-6 d-flex flex-column align-items-center">
           <h3>Contacto</h3>
           <div class="contact-info">
             <div class="contact-item">
-              <img
-                src="../../assets/location.png"
-                alt="Icono"
-                style="width: 50px; height: 50px"
-              />
+              <img src="../../assets/location.png" alt="Icono" style="width: 50px; height: 50px" />
               <p class="p-2">RollingCode</p>
             </div>
             <div class="contact-item">
-              <img
-                src="../../assets/telephone.png"
-                alt="Icono"
-                style="width: 50px; height: 50px"
-              />
+              <img src="../../assets/telephone.png" alt="Icono" style="width: 50px; height: 50px" />
               <p class="p-2">+54 381 578-3030</p>
             </div>
             <div class="contact-item">
-              <img
-                src="../../assets/mail.png"
-                alt="Icono"
-                style="width: 50px; height: 50px"
-              />
+              <img src="../../assets/mail.png" alt="Icono" style="width: 50px; height: 50px" />
               <p class="p-2">
-                <a href="mailto:academy@rollingcodeschool.com"
-                  >academy@rollingcodeschool.com</a
-                >
+                <a href="mailto:academy@rollingcodeschool.com">academy@rollingcodeschool.com</a>
               </p>
             </div>
           </div>
@@ -493,27 +490,22 @@
       </div>
     </div>
     <div class="d-flex flex-column align-items-center">
-    <hr class="my-2 linea">
-    <div
-      class="d-flex flex-column principalfooter align-items-center justify-content-center"
-    >
-      <img src="../../assets/logo ST.png" alt="logo" />
-      <p>
-        Soluciones integrales para tu hogar: electricidad, carpintería,
-        plomería y más. ¡Todo lo que necesitas, en manos expertas!
-      </p>
+      <hr class="my-2 linea">
+      <div class="d-flex flex-column principalfooter align-items-center justify-content-center">
+        <img src="../../assets/logo ST.png" alt="logo" />
+        <p>
+          Soluciones integrales para tu hogar: electricidad, carpintería,
+          plomería y más. ¡Todo lo que necesitas, en manos expertas!
+        </p>
+      </div>
+      <hr class="my-2 linea">
+      <div class="d-flex flex-column principalfooter align-items-center justify-content-center">
+        <p class="mb-0">@Copyright. All Equipo Rocket</p>
+       
+      </div>
     </div>
-    <hr class="my-2 linea">      
-    <div
-      class="d-flex flex-column principalfooter align-items-center justify-content-center"
-    >      
-    <p class="mb-0">@Copyright. All Equipo Rocket</p>
-      </p>
-    </div>
-  </div>
   </div>
 </footer>
-
 <!--------------------------------------------------------------------------------------
  ------------------------          MODAL        --------------------------------------
  --------------------------------------------------------------------------------------->
