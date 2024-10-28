@@ -96,21 +96,28 @@
         width: 23px;
         height: 23px;
         margin-top: -1.5em;
+        
     }
     50% {
         width: 22px;
         height: 23px;
         margin-top: -3em;
+        
     }
     50% {
         width: 22px;
         height: 23px;
         margin-top: -3em;
+        
     }
+    
+    
+    
     100% {
         width: 29px;
     height: 23px;
         margin-top: -1.5em;
+        background-color:rgba(253,187,45,0) 100% ; 
     }
   }
 
@@ -214,4 +221,98 @@
     
     font-size: 200px;
     
+}
+
+/***************************************************************************
+************* RESPONSIVE PARA PANTALLAS MENORES A 600PX  *******************
+****************************************************************************/
+
+@media screen and (max-width: 600px) {
+/***************************************************************************
+****************** DESAPARECER EL PARPADO DERECHO  ***********************/
+    .parpado-der{
+        display:none;
+    }
+    
+
+    .ojo-derecho{
+        z-index: 1;
+        background-color: #333333;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        margin-left: 1.1em;
+        margin-top: -.5em;
+        position: absolute;
+        .brillo-ojo-der{
+            background-color: white;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            margin-left: 5px;
+            margin-top: 3px;
+            position: relative;
+        }
+    }
+    @keyframes parpadeo-izq{
+        0% {
+            width: 17px;
+            height: 17px;
+            margin-top: -.5em;
+            
+        }
+        50% {
+            width: 17px;
+            height: 17px;
+            margin-top: -2em;
+            
+        }
+        50% {
+            width: 17px;
+            height: 17px;
+            margin-top: -2em;
+            
+        }
+        
+        
+        
+        100% {
+            width: 17px;
+        height: 17px;
+            margin-top: -.5em;
+          
+        }
+      }
+
+      .parpado-izq{
+        z-index: 2;
+        background-color: #83b777;
+        width: 18px;
+        height: 16px;
+        border-radius: 50%;
+        margin-left: -2.05em;
+        margin-top: -.8em;
+        position: absolute;
+        animation: parpadeo-izq 2s infinite;
+    }
+    .ojo-izq{
+        z-index: 1;
+        background-color: #333333;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        margin-left: -2em;
+        margin-top: -.5em;
+        position: absolute;
+        .brillo-ojo-izq{
+            background-color: white;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            margin-left: 5px;
+            margin-top: 3px;
+            position: relative;
+        }
+    }
+
 }
