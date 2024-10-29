@@ -153,6 +153,7 @@ h5, p {
   100% {
     transform: translateX(0);
   }
+
 }
 
 footer {
@@ -247,6 +248,10 @@ footer {
   width: 50%;
   background: linear-gradient(to right, #e8e9eb, #565a5c);
 }
+p{
+
+  text-align: center !important;
+}
 
 /* MEDIA QUERIES PANTALLA SM */
 @media (max-width: 768px) {
@@ -264,5 +269,10 @@ footer {
 
   .imputNew {
     width: 100%;
+  }
+
+  p{
+    font-size: 20pxpx !important;
+    text-align: center !important;
   }
 }
