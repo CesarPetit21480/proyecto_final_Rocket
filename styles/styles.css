@@ -80,7 +80,7 @@ a:link, a:visited, a:active {
   text-decoration:none;
 }
 
-div .card {
+.principal .card {
     width: 500px;
     height: auto;
     justify-content: start;
@@ -103,7 +103,7 @@ div .card {
   justify-content: center;
 }
 
-div.cardContainer {
+principal.cardContainer {
   width: 500px;
 }
 
@@ -112,11 +112,11 @@ div.cardContainer {
   border-radius: 37px 37px 0 0;
 }
 
-div .card-body {
+.principal .card-body {
   padding: 30px 20px;
   background: linear-gradient(#c8d9cf, #778e8b);
   border-radius: 0 0 37px 37px;
-}
+} 
 
 h5, p {
   background-color: inherit;
