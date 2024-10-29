@@ -168,22 +168,24 @@
               comunicaremos con vos lo antes posible.
             </p>
                 <section id="container" class="formulario p-5">
-                  <form class="row g-1">
+                  <form class="row g-1 needs-validation" novalidate>
                     <div class="col-md-4">
-                      <label for="text" class="form-label">Nombre</label>
-                      <input type="email" class="form-control" id="inputText" />
+                      <label for="validacionNombre" class="form-label">Nombre</label>
+                      <input type="text" class="form-control" id="validacionNombre" required
+                      placeholder="Nombre"/>
                     </div>
                     <div class="col-md-4">
-                      <label for="inputText2" class="form-label">Apellido</label>
-                      <input type="password" class="form-control" id="inputText2" />
+                      <label for="validadcionApellido" class="form-label">Apellido</label>
+                      <input type="text" class="form-control" id="validadcionApellido"id="validacionNombre" required
+                      placeholder="Apellido" />
                     </div>
                     <div class="col-4">
-                      <label for="inputEmail4" class="form-label">Email</label>
+                      <label for="validacionEmail" class="form-label">Email</label>
                       <input
                         type="email"
                         class="form-control"
-                        id="inputEmail4"
-                        placeholder="nombre@mail.com"
+                        id="validacionEmail"
+                         required placeholder="nombre@mail.com"
                       />
                     </div>
                     <div class="col-7">
@@ -328,6 +330,7 @@
         </div>
       </div>
     </section>
+        
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -356,4 +359,4 @@
 })()
     </script>
   </body>
-</html>
+</html> 
