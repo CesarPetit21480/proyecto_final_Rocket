@@ -30,6 +30,10 @@
   margin: 0;
 }
 
+main {
+  background-color: #c8d9cf;
+}
+
 .navbar {
   background: linear-gradient(90deg, #c8d9cf 0%, #889893 50%, #778e8b 100%);
   font-family: "Poppins", sans-serif !important;
@@ -62,10 +66,61 @@
   transition: all 0.5s ease-in-out;
 }
 
-/* .card {
+.bannerContainer {
+  box-shadow: 0 0 30px #778e8b;
+}
+
+a {
+  justify-content: center;
+  align-content: center;
+}
+
+a:link, a:visited, a:active {
+  color: #000;
+  text-decoration:none;
+}
+
+.principal .card {
+    width: 500px;
+    height: auto;
+    justify-content: start;
+    align-content: center;
+    transition: all .9s;
+    border-radius: 40px;
+    border: 2px solid #778e8b;
+    box-shadow: 0 0 15px #778e8bee;
+}
+
+.principal .card:hover {
+  transform: scale(1.05);
+  transition: all .9s;
+}
+
+.cardImgContainer {
+  justify-content: start;
+  box-sizing: border-box;
+  align-content: center;
+  justify-content: center;
+}
+
+.principal .cardContainer {
   width: 500px;
-  height: auto;
-} */
+}
+
+.cardLogo {
+  width: 100%;
+  border-radius: 37px 37px 0 0;
+}
+
+.principal .card-body {
+  padding: 30px 20px;
+  background: linear-gradient(#c8d9cf, #778e8b);
+  border-radius: 0 0 37px 37px;
+} 
+
+h5, p {
+  background-color: inherit;
+}
 
 .logo:hover {
   animation: vibrate 0.3s linear infinite;
@@ -197,10 +252,6 @@ footer {
 @media (max-width: 768px) {
   #intro {
     width: 90% !important;
-  }
-
-  .servicio-row {
-    width: 100% !important;
   }
 
   .servicio-section {
