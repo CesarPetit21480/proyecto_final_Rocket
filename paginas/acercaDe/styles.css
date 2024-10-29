@@ -23,15 +23,11 @@
     opacity: 0.1;
 } */
 
-.card {
-    width: 500px;
-    height: 300px;
+.card img {
+    width: 100px;
+    height: 100px;
 }
 
-/* .card-img-top {
-    width: 50% vh;
-    height: 200px;
-} */
 
 .section-padding {
     padding-top: 140px;
@@ -50,3 +46,13 @@
     height: 4px;
     margin: 16 px auto 24 px auto;
 }
+
+body {
+    background: rgb(119, 117, 154);
+    background: linear-gradient(
+      90deg,
+      rgb(253, 253, 253) 0%,
+      rgba(204, 214, 214, 1) 53%,
+      rgba(221, 229, 231, 1) 100%
+    );
+  }
