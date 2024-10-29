@@ -40,13 +40,56 @@
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="../servicios/servicios.html"
-                  >Servicios</a
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
                 >
+                  Servicios</a
+                >
+
+                <ul class="dropdown-menu colorFooter p-3">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./../servicios/instalaciones-electricas.html"
+                      >Intalacion Electricas</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./../servicios/cerrajeria.html"
+                      >Cerrajería</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./../servicios/carpinteria.html"
+                      >Carpintería</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./../servicios/diseno-interiores.html"
+                      >diseño-interiores</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./../servicios/plomeria.html"
+                      >Plomeria</a
+                    >
+                  </li>
+                </ul>
               </li>
+
               <li class="nav-item">
-                <a class="nav-link" href="#">Acerca de Nosotros</a>
+                <a class="nav-link" href="../acercaDe/acercaDe.html">Acerca de Nosotros</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Contáctenos</a>
@@ -58,6 +101,8 @@
                 <a
                   class="nav-link d-flex flex-column align-items-center"
                   href="../login/login.html"
+                  data-bs-toggle="tooltip"
+                  title="Iniciar sesión"
                 >
                   <img
                     class="logoUsuario"
@@ -68,6 +113,8 @@
                 <a
                   class="nav-link d-flex flex-column align-items-center"
                   href="../register/register.html"
+                  data-bs-toggle="tooltip"
+                  title="Registracion"
                 >
                   <img
                     class="logoUsuario"
@@ -75,9 +122,12 @@
                     alt="Usuario"
                   />
                 </a>
+
                 <a
                   class="nav-link d-flex flex-column align-items-center"
                   href="../carrito/carrito.html"
+                  data-bs-toggle="tooltip"
+                  title="Carrito de Compras"
                 >
                   <img
                     class="logoUsuario"
@@ -91,127 +141,222 @@
         </div>
       </nav>
     </header>
-    <h2 class="p-5">Encontranos en...</h2>
-    <section id="container" class="mapa mb-4">
-      <div class="row">
-        <div class="col-3">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2407.5926662728502!2d-64.18040785547306!3d-31.418253046645717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432bd15c5cf80d5%3A0xe0113a2b6f6b4164!2sMUNDO%20NOTEBOOK!5e0!3m2!1ses!2sar!4v1729030178656!5m2!1ses!2sar"
-            width="600"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+      <section id="container">
+          <div class="row Ubicación">
+            <div class="col-6">
+              <h3>Ubicación</h3>
+              <p class="mb-3"> Nos encontramos en el corazón de Micumán, a pocos minutos del centro. Visítanos para conocernos en persona o para cualquier consulta</p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11885.56194078154!2d-65.207167!3d-26.8365833!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d3ad7f30f1d%3A0xf8606cd659b8e3e4!2sRollingCode%20School!5e1!3m2!1ses!2sar!4v1729892188614!5m2!1ses!2sar" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <ul class="mt-5 ps-5 g-2 list-unstyled">
+              <li class="mt-1 mb-2">
+                <img src="../../assets/images/map-pin-fill.png" alt="">
+                Dirección: General José María Paz 576 (San Miguel de Tucumán, Tucumán)</li>
+              <li class="mt-1 mb-2"> <img src="../../assets/images/whatsapp-fill.png" alt="">
+                Teléfono: 381 578-3030</li>
+              <li class="mt-1 mb-2">
+                <img src="../../assets/images/time-line.png" alt="">Horarios de atención: lunes a viernes de 9 a 13 y de 16 a 20 h.</li>
+              <li class="mt-1 mb-2"> <img src="../../assets/images/mail-line.png" alt="">
+                Mail: academy@rollingcodeschool.com</li>
+            </ul>
+            </div>
+                    <!-- formulario -->
+            <div class="col">
+              <div class="col-10">
+                <h3 class="d-flex justify-content-start">Contáctenos</h3>
+            <p class=" d-flex justify-content-start pe-4 pb-4">
+              Si tenés alguna duda, comentario o sugerencia, podés contactarnos y nos
+              comunicaremos con vos lo antes posible.
+            </p>
+                <section id="container" class="formulario p-5">
+                  <form class="row g-1 needs-validation" novalidate>
+                    <div class="col-md-4">
+                      <label for="validacionNombre" class="form-label">Nombre</label>
+                      <input type="text" class="form-control" id="validacionNombre" required
+                      placeholder="Nombre"/>
+                    </div>
+                    <div class="col-md-4">
+                      <label for="validadcionApellido" class="form-label">Apellido</label>
+                      <input type="text" class="form-control" id="validadcionApellido"id="validacionNombre" required
+                      placeholder="Apellido" />
+                    </div>
+                    <div class="col-4">
+                      <label for="validacionEmail" class="form-label">Email</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="validacionEmail"
+                         required placeholder="nombre@mail.com"
+                      />
+                    </div>
+                    <div class="col-7">
+                      <label for="inputAddress" class="form-label">Dirección</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="inputAddress"
+                        placeholder="calle, altura, departarmento"
+                      />
+                    </div>
+                    <div class="col-md-5">
+                      <label for="inputCity" class="form-label">Ciudad</label>
+                      <input type="text" class="form-control" id="inputCity" />
+                    </div>
+                    <div class="col-md-4">
+                      <label for="inputCity" class="form-label">Provincia</label>
+                      <input type="text" class="form-control" id="inputCity" />
+                    </div>
+                    <div class="col-md-5">
+                      <label for="inputText2" class="form-label">Número de teléfono</label>
+                      <input type="text" class="form-control" id="inputText2" placeholder="por ej. 011+teléfono" />
+                    </div>
+                    <div class="col-md-3">
+                      <label for="inputZip" class="form-label">CP</label>
+                      <input type="number" class="form-control" id="inputZip" />
+                    </div>
+                    <div class="mb-3 col-12">
+                      <label for="exampleFormControlTextarea1" class="form-label"
+                        >Mensaje</label
+                      >
+                      <textarea
+                        class="form-control"
+                        id="exampleFormControlTextarea1"
+                        rows="3"
+                      ></textarea>
+                    </div>
+                    <div class="col-10 mb-2">
+                      <label for="formFile" class="form-label">Adjunta un archivo</label>
+                      <input class="form-control" type="file" id="formFile">
+                    </div>
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck" />
+                  <label class="form-check-label" for="gridCheck">
+                    Acepto la política de privacidad
+                  </label>
+                </div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </div>
+            </form>
+      </div>
+            </div>
+          </div>
+      </section>
+   
+    <footer>
+      <div class="w-100 colorFooter">
+        <div class="secundaryfooter">
+          <div class="row">
+            <div class="d-flex flex-column align-items-center col-lg-4 col-sm-6 text-center">
+              <h3>SUSCRIBETE A LAS NEWSLETTER</h3>
+              <h5>Recibe ofertas, novedades y mucho mas</h5>
+              <div class="mb-3 imputNew">
+                <label for="controlInput" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="controlInput" placeholder="Indicanos tu Email" />
+              </div>
+              <a class="mb-4 mt-4 m" href="./paginas/acercaDe/acercaDe.html">+ Informacion Sobre Nosotros</a>
+  
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                <label class="form-check-label mb-3 ms-0" for="flexCheckDefault">
+                  He leido y acepto la politica de privacidad
+                  <a class="mb-4 mt-4" href="./paginas/error/error504.html">politica de Privacidad</a>
+                </label>
+              </div>
+  
+              <button onclick="window.location.href='./paginas/error/error504.html';" type="button btnNews"
+                class="btn btn-primary">
+                QUIERO SUBCRIBIRME
+              </button>
+            </div>
+            <div class="col-md-3 col-lg-4 col-sm-6 d-flex flex-column align-items-center">
+              <h3>Síguenos</h3>
+              <div class="contact-info">
+                <div class="contact-item">
+                  <img src="../../assets/communication.png" alt="Icono" style="width: 50px; height: 50px" />
+                  <p class="p-2">
+                    <a href="https:facebook.com" target="_blank">Facebook</a>
+                  </p>
+                </div>
+                <div class="contact-item">
+                  <img src="../../assets/instagram.png" alt="Icono" style="width: 50px; height: 50px" />
+                  <p class="p-2">
+                    <a href="https:instagram.com" target="_blank">Instagram</a>
+                  </p>
+                </div>
+                <div class="contact-item">
+                  <img src="../../assets/twitter.png" alt="Icono" style="width: 50px; height: 50px" />
+                  <p class="p-2">
+                    <a href="https://x.com/" target="_blank">Twitter</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-lg-4 col-sm-6 d-flex flex-column align-items-center">
+              <h3>Contacto</h3>
+              <div class="contact-info">
+                <div class="contact-item">
+                  <img src="../../assets/location.png" alt="Icono" style="width: 50px; height: 50px" />
+                  <p class="p-2">RollingCode</p>
+                </div>
+                <div class="contact-item">
+                  <img src="../../assets/telephone.png" alt="Icono" style="width: 50px; height: 50px" />
+                  <p class="p-2">+54 381 578-3030</p>
+                </div>
+                <div class="contact-item">
+                  <img src="../../assets/mail.png" alt="Icono" style="width: 50px; height: 50px" />
+                  <p class="p-2">
+                    <a href="mailto:academy@rollingcodeschool.com">academy@rollingcodeschool.com</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div id="direction" class="col-6">
-          <img src="../../assets/images/map-pin-fill.png" alt="mapa" />
-          <p class="col-3">Dirección: Chacabuco 36, X5000 Córdoba</p>
-          <div id="facebook">
-            <img
-              src="../../assets/images/facebook-circle-fill.png"
-              alt="logoFacebook"
-            />
-            <p>Estamos para ayudarte</p>
+        <div class="d-flex flex-column align-items-center">
+          <hr class="my-2 linea" />
+          <div class="d-flex flex-column principalfooter align-items-center justify-content-center">
+            <img src="../../assets/logo ST.png" alt="logo" />
+            <p>
+              Soluciones integrales para tu hogar: electricidad, carpintería,
+              plomería y más. ¡Todo lo que necesitas, en manos expertas!
+            </p>
           </div>
-          <div id="instagram" class="col-3">
-            <img
-              src="../../assets/images/instagram-line.png"
-              alt="logoInstagram"
-            />
-            <p>Estamos_ok</p>
+          <hr class="my-2 linea" />
+          <div class="d-flex flex-column principalfooter align-items-center justify-content-center">
+            <p class="mb-0">@Copyright. All Equipo Rocket</p>
           </div>
-          <div id="whatsapp">
-            <img
-              src="../../assets/images/whatsapp-fill.png"
-              alt="logoWhatsapp"
-            />
-            <p>3518596012</p>
-          </div>
-          <div id="mail">
-            <img src="../../assets/images/mail-line.png" alt="logoMail" />
-          </div>
-          <p>estamosparayudarte@gmail.com</p>
         </div>
       </div>
     </section>
-    <section id="container" class="formulario">
-      <h3>Contáctenos</h3>
-      <p class="p-2">
-        Si tenés alguna duda, comentario o sugerencia, podés contactarnos y nos
-        comunicaremos con vos lo antes posible.
-      </p>
-      <form class="row g-3">
-        <div class="col-md-3">
-          <label for="text" class="form-label">Nombre</label>
-          <input type="email" class="form-control" id="inputText" />
-        </div>
-        <div class="col-md-3">
-          <label for="inputText2" class="form-label">Apellido</label>
-          <input type="password" class="form-control" id="inputText2" />
-        </div>
-        <div class="col-4">
-          <label for="inputEmail4" class="form-label">Email</label>
-          <input
-            type="email"
-            class="form-control"
-            id="inputEmail4"
-            placeholder="nombre@mail.com"
-          />
-        </div>
-        <div class="col-6">
-          <label for="inputAddress" class="form-label">Address</label>
-          <input
-            type="text"
-            class="form-control"
-            id="inputAddress"
-            placeholder="calle, altura, departarmento"
-          />
-        </div>
-        <div class="col-md-4">
-          <label for="inputCity" class="form-label">Ciudad</label>
-          <input type="text" class="form-control" id="inputCity" />
-        </div>
-        <div class="col-md-3">
-          <label for="inputCity" class="form-label">Provincia</label>
-          <input type="text" class="form-control" id="inputCity" />
-        </div>
-        <div class="col-md-4">
-          <label for="inputText2" class="form-label">Número de teléfono</label>
-          <input type="text" class="form-control" id="inputText2" placeholder="por ej. 011+teléfono" />
-        </div>
-        <div class="col-md-2">
-          <label for="inputZip" class="form-label">Código postal</label>
-          <input type="number" class="form-control" id="inputZip" />
-        </div>
-        <div class="mb-3 col-10">
-          <label for="exampleFormControlTextarea1" class="form-label"
-            >Mensaje</label
-          >
-          <textarea
-            class="form-control"
-            id="exampleFormControlTextarea1"
-            rows="3"
-          ></textarea>
-        </div>
-        <div class="col-12">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck" />
-            <label class="form-check-label" for="gridCheck">
-              Acepto la política de privacidad
-            </label>
-          </div>
-        </div>
-        <div class="col-12">
-          <button type="submit" class="btn btn-primary">Enviar</button>
-        </div>
-      </form>
-    </section>
+        
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+(() => {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+    </script>
   </body>
-</html>
+</html> 
