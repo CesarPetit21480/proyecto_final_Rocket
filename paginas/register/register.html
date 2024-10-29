@@ -165,7 +165,7 @@
                 required
                 placeholder="Ingrese su nombre"
               />
-              <div class="valid-tooltip">Campo Correcto</div>
+              <div class="invalid-feedback">Campo Requerido.</div>
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12 position-relative">
               <label for="validacionApellido" class="form-label"
@@ -178,21 +178,26 @@
                 placeholder="Ingrese su Apellido"
                 required
               />
-              <div class="valid-tooltip">Looks good!</div>
-            </div>
-            <div class="col-lg-6 col-md-12 col-sm-12 position-relative">
-              <label for="exampleFormControlInput1" class="form-label"
-                >Correo Electronico</label
-              >
-              <input
-                type="email"
-                class="form-control"
-                id="exampleFormControlInput1"
-                placeholder="name@example.com"
-              />
-              <div class="valid-tooltip">Looks good!</div>
+              <div class="invalid-feedback">Campo Requerido.</div>
             </div>
 
+            <div class="col-lg-6 col-md-12 col-sm-12 position-relative">
+              <label for="validationCustomUsername" class="form-label"
+                >Correo Electronico</label
+              >
+              <div class="input-group has-validation">
+                
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationCustomUsername"
+                  placeholder="name@example.com"
+                  aria-describedby="inputGroupPrepend"
+                  required
+                />
+                <div class="invalid-feedback">Correo Electronico Invalido.</div>
+              </div>
+            </div>
             <div class="col-lg-6 col-md-12 col-sm-12 position-relative">
               <label for="validationEdad" class="form-label">EDAD</label>
               <input
@@ -202,7 +207,7 @@
                 placeholder="Ingrese su Edad"
                 required
               />
-              <div class="valid-tooltip">Looks good!</div>
+              <div class="invalid-feedback">Campo Requerido.</div>
             </div>
 
             <div class="col-lg-6 col-md-12 col-sm-12 position-relative">
