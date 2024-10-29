@@ -47,7 +47,7 @@
     margin: 16 px auto 24 px auto;
 }
 
-body {
+body, .card-title {
     background: rgb(119, 117, 154);
     background: linear-gradient(
       90deg,
@@ -56,3 +56,5 @@ body {
       rgba(221, 229, 231, 1) 100%
     );
   }
+
+ 
