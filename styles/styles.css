@@ -91,7 +91,7 @@ a:link, a:visited, a:active {
     box-shadow: 0 0 15px #778e8bee;
 }
 
-.card:hover {
+.principal .card:hover {
   transform: scale(1.05);
   transition: all .9s;
 }
@@ -103,7 +103,7 @@ a:link, a:visited, a:active {
   justify-content: center;
 }
 
-principal.cardContainer {
+.principal .cardContainer {
   width: 500px;
 }
 
