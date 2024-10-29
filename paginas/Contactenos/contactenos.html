@@ -142,8 +142,8 @@
       </nav>
     </header>
       <section id="container">
-          <div class="row Ubicación">
-            <div class="col-6">
+          <div class="row Ubicación ">
+            <div class="col-lg-6 col-md-6 col-sm-12">
               <h3>Ubicación</h3>
               <p class="mb-3"> Nos encontramos en el corazón de Micumán, a pocos minutos del centro. Visítanos para conocernos en persona o para cualquier consulta</p>
               <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11885.56194078154!2d-65.207167!3d-26.8365833!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d3ad7f30f1d%3A0xf8606cd659b8e3e4!2sRollingCode%20School!5e1!3m2!1ses!2sar!4v1729892188614!5m2!1ses!2sar" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -161,7 +161,7 @@
             </div>
                     <!-- formulario -->
             <div class="col">
-              <div class="col-10">
+              <div class="d-flex flex-column align-items-start col-lg-10 col-md-6 col-sm-12">
                 <h3 class="d-flex justify-content-start">Contáctenos</h3>
             <p class=" d-flex justify-content-start pe-4 pb-4">
               Si tenés alguna duda, comentario o sugerencia, podés contactarnos y nos
@@ -176,7 +176,7 @@
                     </div>
                     <div class="col-md-4">
                       <label for="validadcionApellido" class="form-label">Apellido</label>
-                      <input type="text" class="form-control" id="validadcionApellido"id="validacionNombre" required
+                      <input type="text" class="form-control" id="validadcionApellido" required
                       placeholder="Apellido" />
                     </div>
                     <div class="col-4">
@@ -189,38 +189,38 @@
                       />
                     </div>
                     <div class="col-7">
-                      <label for="inputAddress" class="form-label">Dirección</label>
+                      <label for="validacionAddress" class="form-label">Dirección</label>
                       <input
                         type="text"
                         class="form-control"
-                        id="inputAddress"
-                        placeholder="calle, altura, departarmento"
+                        id="validacionAddress"
+                        required placeholder="calle, altura, departarmento"
                       />
                     </div>
                     <div class="col-md-5">
-                      <label for="inputCity" class="form-label">Ciudad</label>
-                      <input type="text" class="form-control" id="inputCity" />
+                      <label for="validacionCity" class="form-label">Ciudad</label>
+                      <input type="text" class="form-control" id="validacionCity" required placeholder="Ciudad"/>
                     </div>
                     <div class="col-md-4">
-                      <label for="inputCity" class="form-label">Provincia</label>
-                      <input type="text" class="form-control" id="inputCity" />
+                      <label for="validacionProvincia" class="form-label">Provincia</label>
+                      <input type="text" class="form-control" id="validacionProvincia" required placeholder="Provincia"/>
                     </div>
                     <div class="col-md-5">
-                      <label for="inputText2" class="form-label">Número de teléfono</label>
-                      <input type="text" class="form-control" id="inputText2" placeholder="por ej. 011+teléfono" />
+                      <label for="validacionTelefono" class="form-label">Número de teléfono</label>
+                      <input type="number" class="form-control" id="validacionTelefono" required placeholder="por ej. 011+teléfono" />
                     </div>
                     <div class="col-md-3">
-                      <label for="inputZip" class="form-label">CP</label>
-                      <input type="number" class="form-control" id="inputZip" />
+                      <label for="validacionZip" class="form-label">CP</label>
+                      <input type="number" class="form-control" id="validacionZip" required placeholder="Cód.postal"/>
                     </div>
                     <div class="mb-3 col-12">
-                      <label for="exampleFormControlTextarea1" class="form-label"
+                      <label for="validacionMensaje" class="form-label"
                         >Mensaje</label
                       >
                       <textarea
                         class="form-control"
-                        id="exampleFormControlTextarea1"
-                        rows="3"
+                        id="validacionMensaje"
+                        rows="3" required placeholder="Mensaje"
                       ></textarea>
                     </div>
                     <div class="col-10 mb-2">
@@ -229,10 +229,13 @@
                     </div>
                     <div class="col-12">
                       <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="gridCheck" />
-                  <label class="form-check-label" for="gridCheck">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
                     Acepto la política de privacidad
                   </label>
+                  <div class="invalid-feedback">
+                    Debe estar de acuerdo antes de enviar.
+                  </div>
                 </div>
               </div>
               <div class="col-12">
