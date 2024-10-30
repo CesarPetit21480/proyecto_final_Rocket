@@ -5,33 +5,17 @@
 
 }
 
-/* nav {
-    background: linear-gradient(90deg, rgb(204, 229, 255), rgb(153, 204, 255), rgb(229, 242, 255)) !important;
 
-} */
-
-.linea-divisoria {
-    display:block;
-    width: 2px;
-    height: 72px;
-    color: aqua;
-    text-align: center;
+.card img {
+    width: 100px;
+    height: 100px;
 }
 
-/* #profesionales {
-    background-color: #9fb0aa;
-    opacity: 0.1;
-} */
-
-.card {
-    width: 500px;
-    height: 300px;
-}
-
-/* .card-img-top {
-    width: 50% vh;
-    height: 200px;
-} */
+/*********** EFECTO DE ZOOM AL APUNTAR  ***********/
+.card:hover{
+    transform: scale(1.05);
+    transition: all .9s;
+  }
 
 .section-padding {
     padding-top: 140px;
@@ -50,3 +34,15 @@
     height: 4px;
     margin: 16 px auto 24 px auto;
 }
+
+body, .card-title {
+    background: rgb(119, 117, 154);
+    background: linear-gradient(
+      90deg,
+      rgb(253, 253, 253) 0%,
+      rgba(204, 214, 214, 1) 53%,
+      rgba(221, 229, 231, 1) 100%
+    );
+  }
+
+ 
