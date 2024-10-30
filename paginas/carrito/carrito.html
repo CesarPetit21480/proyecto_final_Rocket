@@ -1,1075 +1,1116 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Carrito de Compras</title>
-    <link rel="stylesheet" href="../../styles/styles.css" />
-    <link rel="stylesheet" href="./styles.css" />
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Carrito de Compras</title>
+  <link rel="stylesheet" href="../../styles/styles.css" />
+  <link rel="stylesheet" href="./styles.css" />
 
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <!-- Logo -->
-          <a
-            class="nav-link d-flex flex-column align-items-center"
-            href="../../index.html"
-          >
-            <img class="logo mb" src="../../assets/logo_2.webp" alt="Usuario" />
-          </a>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+</head>
 
-          <!-- Botón Hamburguesa -->
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Servicios</a
-                >
-
-                <ul class="dropdown-menu colorFooter p-3">
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="./../servicios/instalaciones-electricas.html"
-                      >Intalacion Electricas</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="./../servicios/cerrajeria.html"
-                      >Cerrajería</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="./../servicios/carpinteria.html"
-                      >Carpintería</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="./../servicios/diseno-interiores.html"
-                      >diseño-interiores</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="./../servicios/plomeria.html"
-                      >Plomeria</a
-                    >
-                  </li>
-                </ul>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="#">Acerca de Nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contáctenos</a>
-              </li>
-            </ul>
-
-            <ul class="navbar-nav mb-2 mb-lg-0">
-              <li class="nav-item d-flex">
-                <a
-                  class="nav-link d-flex flex-column align-items-center"
-                  href="../login/login.html"
-                  data-bs-toggle="tooltip"
-                  title="Iniciar sesión"
-                >
-                  <img
-                    class="logoUsuario"
-                    src="../../assets/login.webp"
-                    alt="Usuario"
-                  />
-                </a>
-                <a
-                  class="nav-link d-flex flex-column align-items-center"
-                  href="../register/register.html"
-                  data-bs-toggle="tooltip"
-                  title="Registracion"
-                >
-                  <img
-                    class="logoUsuario"
-                    src="../../assets/registrate.webp"
-                    alt="Usuario"
-                  />
-                </a>
-
-                <a
-                  class="nav-link d-flex flex-column align-items-center"
-                  href="../carrito/carrito.html"
-                  data-bs-toggle="tooltip"
-                  title="Carrito de Compras"
-                >
-                  <img
-                    class="logoUsuario"
-                    src="../../assets/carrito.webp"
-                    alt="Usuario"
-                  />
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-
-    <main>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <div class="row">
-          <div
-            class="d-flex flex-column align-items-center col-lg-6 col-md-6 col-sm-12 text-center overIzquierda"
-          >
-            <h1 class="text-primary m-3">ITEM TRABAJADOS</h1>
-            <div class="card m-5 tamCard">
-              <div
-                class="card-header d-flex justify-content-center align-items-center"
-              >
-                <img
-                  class="imgRubro"
-                  src="../../assets/carrito/electricidad.png"
-                  alt=""
-                />
-                <h5 class="p-2">Electricidad</h5>
-              </div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                  <img
-                    src="../../assets/img-servicios/Gaston1.png"
-                    alt="usuario"
-                  />
-                  <h3>Cesar Petit</h3>
+        <!-- Logo -->
+        <a class="nav-link d-flex flex-column align-items-center" href="../../index.html">
+          <img class="logo mb" src="../../assets/logo_2.webp" alt="Usuario" />
+        </a>
+
+        <!-- Botón Hamburguesa -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Servicios</a>
+
+              <ul class="dropdown-menu colorFooter p-3">
+                <li>
+                  <a class="dropdown-item" href="./../servicios/instalaciones-electricas.html">Intalacion Electricas</a>
                 </li>
-                <li class="list-group-item">
-                  <div class="table-responsive">
-                    <table class="table table-bordered border-primary">
-                      <thead>
-                        <tr>
-                          <th scope="col">Codigo</th>
-                          <th scope="col">Decripcion</th>
-                          <th scope="col">Cantidad</th>
-                          <th scope="col">Precio Unitario</th>
-                          <th scope="col">Total</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th scope="row">1</th>
-                          <td>Horas Trabajadas</td>
-                          <td>4.5</td>
-                          <td>$2500</td>
-                          <td>$12500</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">2</th>
-                          <td>cables</td>
-                          <td>10</td>
-                          <td>$1000</td>
-                          <td>$10000</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">3</th>
-                          <td>Tomas Doble</td>
-                          <td>2</td>
-                          <td>$2500</td>
-                          <td>$5000</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
+                <li>
+                  <a class="dropdown-item" href="./../servicios/cerrajeria.html">Cerrajería</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./../servicios/carpinteria.html">Carpintería</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./../servicios/diseno-interiores.html">diseño-interiores</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./../servicios/plomeria.html">Plomeria</a>
                 </li>
               </ul>
+            </li>
 
-              <div class="d-flex justify-content-center m-3">
-                <button
-                  type="button"
-                  class="btn btn-primary w-50"
-                  data-bs-toggle="modal"
-                  data-bs-target="#ModalTecnicoElectricidad"
-                >
-                  Informe Tecnico
-                </button>
-              </div>
+            <li class="nav-item">
+              <a class="nav-link" href="../acercaDe/acercaDe.html">Acerca de Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Contactenos/contactenos.html">Contáctenos</a>
+            </li>
+          </ul>
 
-              <!-- Modal -->
-              <div
-                class="modal fade"
-                id="ModalTecnicoElectricidad"
-                tabindex="-1"
-                aria-labelledby="ModalLabel"
-                aria-hidden="true"
-              >
-                <div class="modal-dialog modal-dialog-scrollable">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="ModalLabel">
-                        Trabajos Realizados
-                      </h1>
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
-                    </div>
-                    <div class="modal-body overflow-auto">
-                      <div class="text-justify bg-light p-3 border rounded">
-                        <h1 class="fs-4 text-primary">
-                          <strong>Informe Técnico Eléctrico</strong>
-                        </h1>
-                        <p>
-                          <strong>Proyecto:</strong> Recableado y Cambio de
-                          Tomas en Instalación Eléctrica
-                        </p>
-                        <p>
-                          <strong>Descripción del Trabajo:</strong> El trabajo
-                          realizado comprende el recableado de una sección de 10
-                          metros de cable y el cambio de dos tomas combinados
-                          dobles. A continuación, se detallan las acciones
-                          realizadas y los materiales utilizados en el proceso.
-                        </p>
-                        <h4 class="fs-5 text-primary">
-                          <strong>1. Recableado de 10 metros de cable</strong>
-                        </h4>
-                        <ul class="list-unstyled">
-                          <li>
-                            <strong>Tipo de cable utilizado:</strong> Cable
-                            unipolar de cobre de 2,5 mm².
-                          </li>
-                          <li>
-                            <strong>Longitud instalada:</strong> 10 metros.
-                          </li>
-                          <li>
-                            <strong>Objetivo:</strong> Mejorar la capacidad de
-                            conducción y asegurar el cumplimiento de normas de
-                            seguridad, reemplazando el cable existente que
-                            presentaba desgaste.
-                          </li>
-                          <li>
-                            <strong>Procedimiento:</strong>
-                            <ul class="list-unstyled">
-                              <li>
-                                Desconexión del suministro eléctrico en la zona
-                                de trabajo.
-                              </li>
-                              <li>Retiro del cable antiguo deteriorado.</li>
-                              <li>
-                                Instalación del nuevo cableado, asegurando su
-                                correcta fijación y resguardando la integridad
-                                del aislamiento.
-                              </li>
-                              <li>
-                                Verificación de la continuidad eléctrica y
-                                ausencia de cortocircuitos antes de restablecer
-                                el suministro.
-                              </li>
-                            </ul>
-                          </li>
-                        </ul>
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item d-flex">
+              <a class="nav-link d-flex flex-column align-items-center" href="../login/login.html"
+                data-bs-toggle="tooltip" title="Iniciar sesión">
+                <img class="logoUsuario" src="../../assets/login.webp" alt="Usuario" />
+              </a>
+              <a class="nav-link d-flex flex-column align-items-center" href="../register/register.html"
+                data-bs-toggle="tooltip" title="Registracion">
+                <img class="logoUsuario" src="../../assets/registrate.webp" alt="Usuario" />
+              </a>
 
-                        <h4 class="fs-5 text-primary">
-                          <strong
-                            >2. Cambio de 2 Tomas Combinados Dobles</strong
-                          >
-                        </h4>
-
-                        <ul class="list-unstyled">
-                          <li>
-                            <strong>Tipo de toma instalado:</strong> Tomas
-                            combinados dobles con toma a tierra.
-                          </li>
-                          <li><strong>Cantidad:</strong> 2 unidades.</li>
-                          <li>
-                            <strong>Objetivo:</strong> Sustituir los tomas
-                            antiguos que mostraban desgaste y poca fiabilidad,
-                            mejorando la seguridad y estética de la instalación.
-                          </li>
-                          <li>
-                            <strong>Procedimiento:</strong>
-                            <ul class="list-unstyled">
-                              <li>Retiro de los tomas combinados antiguos.</li>
-                              <li>
-                                Revisión de las conexiones eléctricas y ajuste
-                                de los bornes de conexión.
-                              </li>
-                              <li>
-                                Instalación de los nuevos tomas combinados
-                                dobles, asegurando la conexión adecuada del
-                                cableado y su fijación a la caja de conexión.
-                              </li>
-                              <li>
-                                Verificación del correcto funcionamiento de los
-                                tomas combinados mediante pruebas de conexión.
-                              </li>
-                            </ul>
-                          </li>
-                        </ul>
-
-                        <p>
-                          <strong>Materiales Utilizados:</strong> Cable unipolar
-                          de cobre de 2,5 mm² (10 metros). Tomas combinados
-                          dobles (2 unidades). Cinta aislante y tornillería para
-                          fijación.
-                        </p>
-
-                        <p><strong>Pruebas Realizadas:</strong></p>
-                        <ul class="list-unstyled">
-                          <li>
-                            Prueba de continuidad en el nuevo cableado para
-                            asegurar la ausencia de cortes.
-                          </li>
-                          <li>
-                            Verificación del funcionamiento de los tomas
-                            mediante conexión de dispositivos eléctricos.
-                          </li>
-                          <li>
-                            Revisión de la correcta fijación y estabilidad de
-                            los tomas combinados.
-                          </li>
-                        </ul>
-                        <h4 class="fs-5 text-primary">
-                          <strong>Conclusión:</strong>
-                        </h4>
-
-                        <hr />
-                        <p>
-                          El recableado de los 10 metros de cable y la
-                          instalación de los dos tomas combinados dobles se
-                          completó de manera satisfactoria, mejorando la
-                          seguridad y el rendimiento de la instalación
-                          eléctrica. Las pruebas de funcionamiento realizadas
-                          aseguran que el sistema está operativo y cumple con
-                          los estándares de seguridad vigentes.
-                        </p>
-
-                        <p>
-                          Este informe proporciona un resumen de los trabajos
-                          realizados y puede ser utilizado como referencia para
-                          futuras inspecciones o mantenimientos de la
-                          instalación.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card m-5 tamCard">
-              <div
-                class="card-header d-flex justify-content-center align-items-center"
-              >
-                <img
-                  class="imgRubro"
-                  src="../../assets/carrito/plomeria.png"
-                  alt=""
-                />
-                <h5 class="p-2">Plomeria</h5>
-              </div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                  <img
-                    src="../../assets/img-servicios/Eduardo.png"
-                    alt="usuario"
-                  />
-                  <h3>Eduardo Marquez</h3>
-                </li>
-                <li class="list-group-item">
-                  <div class="table-responsive">
-                    <table class="table table-bordered border-primary">
-                      <thead>
-                        <tr>
-                          <th scope="col">Codigo</th>
-                          <th scope="col">Decripcion</th>
-                          <th scope="col">Cantidad</th>
-                          <th scope="col">Precio Unitario</th>
-                          <th scope="col">Total</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th scope="row">1</th>
-                          <td>Horas Trabajadas</td>
-                          <td>2.5</td>
-                          <td>$1500</td>
-                          <td>$4500</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">2</th>
-                          <td>cuplas</td>
-                          <td>5</td>
-                          <td>$300</td>
-                          <td>$1500</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">3</th>
-                          <td>Griferira FV</td>
-                          <td>1</td>
-                          <td>$18500</td>
-                          <td>$18500</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </li>
-              </ul>
-
-              <div class="d-flex justify-content-center m-3">
-                <button
-                  type="button"
-                  class="btn btn-primary w-50"
-                  data-bs-toggle="modal"
-                  data-bs-target="#ModalTecnicoPlomeria"
-                >
-                  Informe Tecnico
-                </button>
-              </div>
-
-              <!-- Modal -->
-              <div
-                class="modal fade"
-                id="ModalTecnicoPlomeria"
-                tabindex="-1"
-                aria-labelledby="ModalLabel"
-                aria-hidden="true"
-              >
-                <div class="modal-dialog modal-dialog-scrollable">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="ModalLabel">
-                        Trabajos Realizados
-                      </h1>
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
-                    </div>
-                    <div class="modal-body overflow-auto">
-                      <div class="text-justify bg-light p-3 border rounded">
-                        <h1 class="fs-4 text-primary">
-                          <strong>Informe Técnico Plomeria</strong>
-                        </h1>
-                        <p>
-                          <strong>Proyecto:</strong> Recambio de cupla y
-                          colocacion griferia Nueva
-                        </p>
-                        <p>
-                          <strong>Descripción del Trabajo:</strong> El trabajo
-                          realizado comprende en el cambio de cupla por una
-                          perdida existencia y se realizo el remplazo de una
-                          griferia
-                        </p>
-
-                        <h4 class="fs-5 text-primary">
-                          <strong>1. Recambio Cupla por Perdida</strong>
-                        </h4>
-
-                        <ul class="list-unstyled">
-                          <li>
-                            <strong>Tipo de cupla:</strong> Cupla FV 3/4
-                            pulgadas de bronce
-                          </li>
-                          <li>
-                            <strong>Objetivo:</strong> Evitar perdidas y una
-                            correctas instalaccion para prevenir acumulacion de
-                            sarro
-                          </li>
-                          <li>
-                            <strong>Procedimiento:</strong>
-                            <ul class="list-unstyled">
-                              <li>
-                                Desconexión del suministro Agua en la zona
-                              </li>
-                              <li>Retiro de cupla Existente.</li>
-                              <li>
-                                Instalación del nueva cupla, asegurando su
-                                correcta fijación y controlando perdidas
-                              </li>
-                            </ul>
-                          </li>
-                        </ul>
-
-                        <h4 class="fs-5 text-primary">
-                          <strong>2. Cambio de Griferia</strong>
-                        </h4>
-
-                        <ul class="list-unstyled">
-                          <li>
-                            <strong>Tipo Griferia FV:</strong> Griferia
-                            Monocomando marca FV
-                          </li>
-                          <li><strong>Cantidad:</strong> 1 unidad.</li>
-                          <li>
-                            <strong>Objetivo:</strong> Sustituir la griferia
-                            existente ya que la original se encuentra perdiendo
-                            y tiene juego
-                          </li>
-                          <li>
-                            <strong>Procedimiento:</strong>
-                            <ul class="list-unstyled">
-                              <li>Retiro de Griferia.</li>
-                              <li>
-                                Retiro griferia , revision de rosca y colocacion
-                                de teflon en rosca
-                              </li>
-                              <li>
-                                Colocacion de nueva griferia y revision de
-                                perdidas
-                              </li>
-                              <li>
-                                Verificación del correcto funcionamiento de la
-                                griferia nueva
-                              </li>
-                            </ul>
-                          </li>
-                        </ul>
-                        <p>
-                          <strong>Materiales Utilizados:</strong> Cupla fv
-                          bronce 3/4 pulgadas, Griferia Modulo FV Monocomando
-                        </p>
-                        <p><strong>Pruebas Realizadas:</strong></p>
-                        <ul class="list-unstyled">
-                          <li>
-                            Prueba de continuidad en el nuevo cableado para
-                            asegurar la ausencia de cortes.
-                          </li>
-                          <li>
-                            Verificación del funcionamiento de los tomas
-                            mediante conexión de dispositivos eléctricos.
-                          </li>
-                          <li>
-                            Revisión de la correcta fijación y estabilidad de
-                            los tomas combinados.
-                          </li>
-                        </ul>
-                        <h4 class="fs-5 text-primary">
-                          <strong>Conclusión:</strong>
-                        </h4>
-                        <hr />
-                        <p>
-                          Este informe proporciona un resumen de los trabajos
-                          realizados y puede ser utilizado como referencia para
-                          el cambio de cubla que se realizó de manera correcta,
-                          evitando pérdidas futuras. Se reemplazó grifería FV,
-                          quedando en perfecto funcionamiento.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card m-5 tamCard">
-              <div
-                class="card-header d-flex justify-content-center align-items-center"
-              >
-                <img
-                  class="imgRubro"
-                  src="../../assets/carrito/carpinteria.png"
-                  alt=""
-                />
-                <h5 class="p-2">carpinteria</h5>
-              </div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                  <img
-                    src="../../assets/img-servicios/Romi.png"
-                    alt="usuario"
-                  />
-                  <h3>Romina Ocampo</h3>
-                </li>
-                <li class="list-group-item">
-                  <div class="table-responsive">
-                    <table class="table table-bordered border-primary">
-                      <thead>
-                        <tr>
-                          <th scope="col">Codigo</th>
-                          <th scope="col">Decripcion</th>
-                          <th scope="col">Cantidad</th>
-                          <th scope="col">Precio Unitario</th>
-                          <th scope="col">Total</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th scope="row">1</th>
-                          <td>Horas Trabajadas</td>
-                          <td>1</td>
-                          <td>$1000</td>
-                          <td>$1000</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">2</th>
-                          <td>bisagra Bronce</td>
-                          <td>4</td>
-                          <td>$1000</td>
-                          <td>$4000</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">3</th>
-                          <td>Tapacanto</td>
-                          <td>2</td>
-                          <td>$3000</td>
-                          <td>$6000</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </li>
-              </ul>
-              <div class="d-flex justify-content-center m-3">
-                <button
-                  type="button"
-                  class="btn btn-primary w-50"
-                  data-bs-toggle="modal"
-                  data-bs-target="#ModalTecnicoCarpinteria"
-                >
-                  Informe Tecnico
-                </button>
-              </div>
-              <!-- Modal -->
-              <div
-                class="modal fade"
-                id="ModalTecnicoCarpinteria"
-                tabindex="-1"
-                aria-labelledby="ModalLabel"
-                aria-hidden="true"
-              >
-                <div class="modal-dialog modal-dialog-scrollable">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="ModalLabel">
-                        Trabajos Realizados
-                      </h1>
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
-                    </div>
-                    <div class="modal-body overflow-auto">
-                      <div class="text-justify bg-light p-3 border rounded">
-                        <h1 class="fs-4 text-primary">
-                          <strong>Informe Técnico Carpinteria</strong>
-                        </h1>
-                        <p>
-                          <strong>Proyecto:</strong> Recambio de bisagras
-                          Placard y colocacion Tapa Canto Maderas Vestidor
-                        </p>
-                        <p>
-                          <strong>Descripción del Trabajo:</strong> El trabajo
-                          realizado comprende en el cambio de bisagras Placard
-                          Habitacion Principal por encontrarse falseada,
-                          Colocacion Tapacanto en todas las maderas del vestidor
-                          principal
-                        </p>
-
-                        <h4 class="fs-5 text-primary">
-                          <strong
-                            >1. Cambio bisagras Placard Habitacion
-                            Principal</strong
-                          >
-                        </h4>
-
-                        <ul class="list-unstyled">
-                          <li>
-                            <strong>Tipo de Bisagra:</strong> Bisagra 20cm doble
-                            Tornillo Bronce
-                          </li>
-                          <li>
-                            <strong>Objetivo:</strong> Evitar que la puerta deje
-                            se hacer juego y que la puerta no se caiga
-                          </li>
-                          <li>
-                            <strong>Procedimiento:</strong>
-                            <ul class="list-unstyled">
-                              <li>
-                                Retiro bisagra actual y Reemplazo de nueva
-                                bisagra
-                              </li>
-                              <li>Calibracion bisagra nueva</li>
-                            </ul>
-                          </li>
-                        </ul>
-
-                        <h4 class="fs-5 text-primary">
-                          <strong
-                            >2. Recambio Tapacanto Maderas Vestidor</strong
-                          >
-                        </h4>
-
-                        <ul class="list-unstyled">
-                          <li>
-                            <strong>Tipo Tapacanto:</strong> Tapacanto color
-                            marron Oscuro de 20 cm de ancho autoadhesivo
-                          </li>
-                          <li><strong>Cantidad:</strong> 3 unidad.</li>
-                          <li>
-                            <strong>Objetivo:</strong> Sustituir el tapacanto
-                            Original Reemplazandolo por un nuevo
-                          </li>
-                          <li>
-                            <strong>Procedimiento:</strong>
-                            <ul class="list-unstyled">
-                              <li>Retiro de Tapacanto Existente</li>
-                              <li>
-                                Colocacion tapacanto nuevo, revisando que quede
-                                correctamente pegado
-                              </li>
-                            </ul>
-                          </li>
-                        </ul>
-                        <p>
-                          <strong>Materiales Utilizados:</strong> Bisagra bronce
-                          20 cm doble ojal, Tapacanto color marron 20 cm de
-                          ancho
-                        </p>
-                        <p><strong>Pruebas Realizadas:</strong></p>
-                        <ul class="list-unstyled">
-                          <li>Prueba de apertura de puertas y cierre parejo</li>
-                          <li>
-                            Verificacion de tapancanto que quede correctamente
-                            pegado
-                          </li>
-                        </ul>
-
-                        <h4 class="fs-5 text-primary">
-                          <strong>Conclusión:</strong>
-                        </h4>
-                        <hr />
-                        <p>
-                          El cambio de bisagra quedo correcta y sin juego y el
-                          tapacanto quedo pegado correctamente
-                        </p>
-                        <p>
-                          Este informe proporciona un resumen de los trabajos
-                          realizados y puede ser utilizado como referencia para
-                          futuras inspecciones o mantenimientos de la
-                          instalación.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="d-flex flex-column col-lg-6 col-md-12 col-sm-12 text-center d-flex flex-column justify-content-center align-items-center"
-          >
-            <div
-              class="col-lg-6 col-md-12 col-sm-12 position-relative d-flex align-items-center justify-content-center"
-            >
-              <img
-                class="responsive-img"
-                src="../../assets/carrito/mediosDePago.png"
-                alt="imgMediosPago"
-              />
-            </div>
-
-            <form
-              class="row g-3 col-lg-6 col-md-6 col-sm-12 needs-validation d-flex flex-column w-100 align-items-center"
-              novalidate
-            >
-              <div class="col-lg-6 col-md-12 col-sm-12 position-relative">
-                <label for="validationTooltip01" class="form-label">
-                  CANTIDAD ITEMS</label
-                >
-                <input
-                  type="text"
-                  class="form-control"
-                  id="validationTooltip01"
-                  value="3"
-                  disabled
-                  required
-                />
-                <div class="valid-tooltip">Looks good!</div>
-              </div>
-              <div class="col-lg-6 col-md-12 col-sm-12 position-relative">
-                <label for="validationTooltip02" class="form-label"
-                  >SubTotal</label
-                >
-                <input
-                  type="text"
-                  class="form-control"
-                  id="validationTooltip02"
-                  value="$ 63000"
-                  disabled
-                  required
-                />
-                <div class="valid-tooltip">Looks good!</div>
-              </div>
-              <div class="col-lg-6 col-md-12 col-sm-12 position-relative">
-                <label for="validationTooltip02" class="form-label"
-                  >IVA 21%</label
-                >
-                <input
-                  type="text"
-                  class="form-control"
-                  id="validationTooltip02"
-                  value="$ 13230"
-                  disabled
-                  required
-                />
-                <div class="valid-tooltip">Looks good!</div>
-              </div>
-
-              <div class="col-lg-6 col-md-12 col-sm-12 position-relative">
-                <label for="validationTooltip02" class="form-label"
-                  >TOTAL</label
-                >
-                <input
-                  type="text"
-                  class="form-control"
-                  id="validationTooltip02"
-                  value="$ 76230"
-                  disabled
-                  required
-                />
-                <div class="valid-tooltip">Looks good!</div>
-              </div>
-
-              <div class="col-lg-6 col-md-12 col-sm-12 position-relative">
-                <label for="validarionMedios" class="form-label"
-                  >MEDIOS DE PAGO</label
-                >
-                <select class="form-select" id="validarionMedios" required>
-                  <option selected disabled value="">Seleccion...</option>
-                  <option>Debito</option>
-                  <option>Credito</option>
-                  <option>Efectivo 10% descuento</option>
-                  <option>Mercado Pago</option>
-                </select>
-                <div class="invalid-tooltip">Selecciones el medio de pago.</div>
-              </div>
-
-              <div class="col-lg-6 col-md-12 col-sm-12 position-relative">
-                <label for="validadionCuotas" class="form-label"
-                  >Seleccione Cuotas</label
-                >
-                <select class="form-select" id="validadionCuotas" required>
-                  <option selected disabled value="">Seleccion...</option>
-                  <option>1 x 76230</option>
-                  <option>3 x 25410</option>
-                  <option>12 x 6352.5</option>
-                </select>
-                <div class="invalid-tooltip">Seleccione una cuota valida</div>
-              </div>
-              <div class="col-12 p-3">
-                <button class="btn btn-primary tamBtn" type="submit">
-                  Efectuar Pago
-                </button>
-              </div>
-            </form>
-          </div>
+              <a class="nav-link d-flex flex-column align-items-center" href="../carrito/carrito.html"
+                data-bs-toggle="tooltip" title="Carrito de Compras">
+                <img class="logoUsuario" src="../../assets/carrito.webp" alt="Usuario" />
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-    </main>
-    <footer>
-      <div class="w-100 colorFooter">
-        <div class="secundaryfooter">
-          <div class="row">
-            <div
-              class="d-flex flex-column align-items-center col-lg-4 col-sm-6 text-center"
-            >
-              <h3>SUSCRIBETE A LAS NEWSLETTER</h3>
-              <h5>Recibe ofertas, novedades y mucho mas...</h5>
-              <div class="mb-3 imputNew">
-                <label for="controlInput" class="form-label"
-                  >Email address</label
-                >
-                <input
-                  type="email"
-                  class="form-control"
-                  id="controlInput"
-                  placeholder="Indicanos tu Email"
-                />
-              </div>
-              <a class="mb-4 mt-4 m" href="../acercaDe/acercaDe.html"
-                >+ Informacion Sobre Nosotros</a
-              >
+    </nav>
+  </header>
 
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefault"
-                />
-                <label
-                  class="form-check-label mb-3 ms-0"
-                  for="flexCheckDefault"
-                >
-                  He leido y acepto la politica de privacidad
-                  <a class="mb-4 mt-4" href="../error/error404.html">
-                    politica de Privacidad</a
-                  >
-                </label>
-              </div>
+  <main>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="d-flex flex-column align-items-center col-lg-6 col-md-6 col-sm-12 text-center overIzquierda">
+          <h1 class="text-primary m-3">ITEM TRABAJADOS</h1>
+          <div class="card m-5 tamCard">
+            <div class="card-header d-flex justify-content-center align-items-center">
+              <img class="imgRubro" src="../../assets/carrito/electricidad.png" alt="" />
+              <h5 class="p-2">Electricidad</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <img src="../../assets/img-servicios/Gaston1.png" alt="usuario" />
+                <h3>César Gaston Petit Martin</h3>
+              </li>
+              <li class="list-group-item">
+                <div class="table-responsive">
+                  <table class="table table-bordered border-primary">
+                    <thead>
+                      <tr>
+                        <th scope="col">Codigo</th>
+                        <th scope="col">Decripcion</th>
+                        <th scope="col">Cantidad</th>
+                        <th scope="col">Precio Unitario</th>
+                        <th scope="col">Total</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Horas Trabajadas</td>
+                        <td>4.5</td>
+                        <td>$2500</td>
+                        <td>$12500</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>cables</td>
+                        <td>10</td>
+                        <td>$1000</td>
+                        <td>$10000</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Tomas Doble</td>
+                        <td>2</td>
+                        <td>$2500</td>
+                        <td>$5000</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </li>
+            </ul>
 
-              <button
-                onclick="window.location.href='../error/error404.html';"
-                type="button btnNews"
-                class="btn btn-primary"
-              >
-                QUIERO SUBCRIBIRME
+            <div class="d-flex justify-content-center m-3">
+              <button type="button" class="btn btn-primary w-50" data-bs-toggle="modal"
+                data-bs-target="#ModalTecnicoElectricidad">
+                Informe Tecnico
               </button>
             </div>
-            <div
-              class="col-md-3 col-lg-4 col-sm-6 d-flex flex-column align-items-center"
-            >
-              <h3>Síguenos</h3>
-              <div class="contact-info">
-                <div class="contact-item">
-                  <img
-                    src="../../assets/communication.png"
-                    alt="Icono"
-                    style="width: 50px; height: 50px"
-                  />
-                  <p class="p-2">
-                    <a href="https:facebook.com" target="_blank">Facebook</a>
-                  </p>
-                </div>
-                <div class="contact-item">
-                  <img
-                    src="../../assets/instagram.png"
-                    alt="Icono"
-                    style="width: 50px; height: 50px"
-                  />
-                  <p class="p-2">
-                    <a href="https:instagram.com" target="_blank">Instagram</a>
-                  </p>
-                </div>
-                <div class="contact-item">
-                  <img
-                    src="../../assets/twitter.png"
-                    alt="Icono"
-                    style="width: 50px; height: 50px"
-                  />
-                  <p class="p-2">
-                    <a href="https://x.com/" target="_blank">Twitter</a>
-                  </p>
+
+            <!-- Modal -->
+            <div class="modal fade" id="ModalTecnicoElectricidad" tabindex="-1" aria-labelledby="ModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="ModalLabel">
+                      Trabajos Realizados
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body overflow-auto">
+                    <div class="text-justify bg-light p-3 border rounded">
+                      <h1 class="fs-4 text-primary">
+                        <strong>Informe Técnico Eléctrico</strong>
+                      </h1>
+                      <p>
+                        <strong>Proyecto:</strong> Recableado y Cambio de
+                        Tomas en Instalación Eléctrica
+                      </p>
+                      <p>
+                        <strong>Descripción del Trabajo:</strong> El trabajo
+                        realizado comprende el recableado de una sección de 10
+                        metros de cable y el cambio de dos tomas combinados
+                        dobles. A continuación, se detallan las acciones
+                        realizadas y los materiales utilizados en el proceso.
+                      </p>
+                      <h4 class="fs-5 text-primary">
+                        <strong>1. Recableado de 10 metros de cable</strong>
+                      </h4>
+                      <ul class="list-unstyled">
+                        <li>
+                          <strong>Tipo de cable utilizado:</strong> Cable
+                          unipolar de cobre de 2,5 mm².
+                        </li>
+                        <li>
+                          <strong>Longitud instalada:</strong> 10 metros.
+                        </li>
+                        <li>
+                          <strong>Objetivo:</strong> Mejorar la capacidad de
+                          conducción y asegurar el cumplimiento de normas de
+                          seguridad, reemplazando el cable existente que
+                          presentaba desgaste.
+                        </li>
+                        <li>
+                          <strong>Procedimiento:</strong>
+                          <ul class="list-unstyled">
+                            <li>
+                              Desconexión del suministro eléctrico en la zona
+                              de trabajo.
+                            </li>
+                            <li>Retiro del cable antiguo deteriorado.</li>
+                            <li>
+                              Instalación del nuevo cableado, asegurando su
+                              correcta fijación y resguardando la integridad
+                              del aislamiento.
+                            </li>
+                            <li>
+                              Verificación de la continuidad eléctrica y
+                              ausencia de cortocircuitos antes de restablecer
+                              el suministro.
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+
+                      <h4 class="fs-5 text-primary">
+                        <strong>2. Cambio de 2 Tomas Combinados Dobles</strong>
+                      </h4>
+
+                      <ul class="list-unstyled">
+                        <li>
+                          <strong>Tipo de toma instalado:</strong> Tomas
+                          combinados dobles con toma a tierra.
+                        </li>
+                        <li><strong>Cantidad:</strong> 2 unidades.</li>
+                        <li>
+                          <strong>Objetivo:</strong> Sustituir los tomas
+                          antiguos que mostraban desgaste y poca fiabilidad,
+                          mejorando la seguridad y estética de la instalación.
+                        </li>
+                        <li>
+                          <strong>Procedimiento:</strong>
+                          <ul class="list-unstyled">
+                            <li>Retiro de los tomas combinados antiguos.</li>
+                            <li>
+                              Revisión de las conexiones eléctricas y ajuste
+                              de los bornes de conexión.
+                            </li>
+                            <li>
+                              Instalación de los nuevos tomas combinados
+                              dobles, asegurando la conexión adecuada del
+                              cableado y su fijación a la caja de conexión.
+                            </li>
+                            <li>
+                              Verificación del correcto funcionamiento de los
+                              tomas combinados mediante pruebas de conexión.
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+
+                      <p>
+                        <strong>Materiales Utilizados:</strong> Cable unipolar
+                        de cobre de 2,5 mm² (10 metros). Tomas combinados
+                        dobles (2 unidades). Cinta aislante y tornillería para
+                        fijación.
+                      </p>
+
+                      <p><strong>Pruebas Realizadas:</strong></p>
+                      <ul class="list-unstyled">
+                        <li>
+                          Prueba de continuidad en el nuevo cableado para
+                          asegurar la ausencia de cortes.
+                        </li>
+                        <li>
+                          Verificación del funcionamiento de los tomas
+                          mediante conexión de dispositivos eléctricos.
+                        </li>
+                        <li>
+                          Revisión de la correcta fijación y estabilidad de
+                          los tomas combinados.
+                        </li>
+                      </ul>
+                      <h4 class="fs-5 text-primary">
+                        <strong>Conclusión:</strong>
+                      </h4>
+
+                      <hr />
+                      <p>
+                        El recableado de los 10 metros de cable y la
+                        instalación de los dos tomas combinados dobles se
+                        completó de manera satisfactoria, mejorando la
+                        seguridad y el rendimiento de la instalación
+                        eléctrica. Las pruebas de funcionamiento realizadas
+                        aseguran que el sistema está operativo y cumple con
+                        los estándares de seguridad vigentes.
+                      </p>
+
+                      <p>
+                        Este informe proporciona un resumen de los trabajos
+                        realizados y puede ser utilizado como referencia para
+                        futuras inspecciones o mantenimientos de la
+                        instalación.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div
-              class="col-md-3 col-lg-4 col-sm-6 d-flex flex-column align-items-center"
-            >
-              <h3>Contacto</h3>
-              <div class="contact-info">
-                <div class="contact-item">
-                  <img
-                    src="../../assets/location.png"
-                    alt="Icono"
-                    style="width: 50px; height: 50px"
-                  />
-                  <p class="p-2">RollingCode</p>
+          </div>
+          <div class="card m-5 tamCard">
+            <div class="card-header d-flex justify-content-center align-items-center">
+              <img class="imgRubro" src="../../assets/carrito/plomeria.png" alt="" />
+              <h5 class="p-2">Plomeria</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <img src="../../assets/img-servicios/Nadir.png" alt="usuario" />
+                <h3>Nadir José Leonel Cappello</h3>
+              </li>
+              <li class="list-group-item">
+                <div class="table-responsive">
+                  <table class="table table-bordered border-primary">
+                    <thead>
+                      <tr>
+                        <th scope="col">Codigo</th>
+                        <th scope="col">Decripcion</th>
+                        <th scope="col">Cantidad</th>
+                        <th scope="col">Precio Unitario</th>
+                        <th scope="col">Total</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Horas Trabajadas</td>
+                        <td>2.5</td>
+                        <td>$1500</td>
+                        <td>$4500</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>cuplas</td>
+                        <td>5</td>
+                        <td>$300</td>
+                        <td>$1500</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Griferira FV</td>
+                        <td>1</td>
+                        <td>$18500</td>
+                        <td>$18500</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
-                <div class="contact-item">
-                  <img
-                    src="../../assets/telephone.png"
-                    alt="Icono"
-                    style="width: 50px; height: 50px"
-                  />
-                  <p class="p-2">+54 381 578-3030</p>
+              </li>
+            </ul>
+
+            <div class="d-flex justify-content-center m-3">
+              <button type="button" class="btn btn-primary w-50" data-bs-toggle="modal"
+                data-bs-target="#ModalTecnicoPlomeria">
+                Informe Tecnico
+              </button>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="ModalTecnicoPlomeria" tabindex="-1" aria-labelledby="ModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="ModalLabel">
+                      Trabajos Realizados
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body overflow-auto">
+                    <div class="text-justify bg-light p-3 border rounded">
+                      <h1 class="fs-4 text-primary">
+                        <strong>Informe Técnico Plomeria</strong>
+                      </h1>
+                      <p>
+                        <strong>Proyecto:</strong> Recambio de cupla y
+                        colocacion griferia Nueva
+                      </p>
+                      <p>
+                        <strong>Descripción del Trabajo:</strong> El trabajo
+                        realizado comprende en el cambio de cupla por una
+                        perdida existencia y se realizo el remplazo de una
+                        griferia
+                      </p>
+
+                      <h4 class="fs-5 text-primary">
+                        <strong>1. Recambio Cupla por Perdida</strong>
+                      </h4>
+
+                      <ul class="list-unstyled">
+                        <li>
+                          <strong>Tipo de cupla:</strong> Cupla FV 3/4
+                          pulgadas de bronce
+                        </li>
+                        <li>
+                          <strong>Objetivo:</strong> Evitar perdidas y una
+                          correctas instalaccion para prevenir acumulacion de
+                          sarro
+                        </li>
+                        <li>
+                          <strong>Procedimiento:</strong>
+                          <ul class="list-unstyled">
+                            <li>
+                              Desconexión del suministro Agua en la zona
+                            </li>
+                            <li>Retiro de cupla Existente.</li>
+                            <li>
+                              Instalación del nueva cupla, asegurando su
+                              correcta fijación y controlando perdidas
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+
+                      <h4 class="fs-5 text-primary">
+                        <strong>2. Cambio de Griferia</strong>
+                      </h4>
+
+                      <ul class="list-unstyled">
+                        <li>
+                          <strong>Tipo Griferia FV:</strong> Griferia
+                          Monocomando marca FV
+                        </li>
+                        <li><strong>Cantidad:</strong> 1 unidad.</li>
+                        <li>
+                          <strong>Objetivo:</strong> Sustituir la griferia
+                          existente ya que la original se encuentra perdiendo
+                          y tiene juego
+                        </li>
+                        <li>
+                          <strong>Procedimiento:</strong>
+                          <ul class="list-unstyled">
+                            <li>Retiro de Griferia.</li>
+                            <li>
+                              Retiro griferia , revision de rosca y colocacion
+                              de teflon en rosca
+                            </li>
+                            <li>
+                              Colocacion de nueva griferia y revision de
+                              perdidas
+                            </li>
+                            <li>
+                              Verificación del correcto funcionamiento de la
+                              griferia nueva
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                      <p>
+                        <strong>Materiales Utilizados:</strong> Cupla fv
+                        bronce 3/4 pulgadas, Griferia Modulo FV Monocomando
+                      </p>
+                      <p><strong>Pruebas Realizadas:</strong></p>
+                      <ul class="list-unstyled">
+                        <li>
+                          Prueba de continuidad en el nuevo cableado para
+                          asegurar la ausencia de cortes.
+                        </li>
+                        <li>
+                          Verificación del funcionamiento de los tomas
+                          mediante conexión de dispositivos eléctricos.
+                        </li>
+                        <li>
+                          Revisión de la correcta fijación y estabilidad de
+                          los tomas combinados.
+                        </li>
+                      </ul>
+                      <h4 class="fs-5 text-primary">
+                        <strong>Conclusión:</strong>
+                      </h4>
+                      <hr />
+                      <p>
+                        Este informe proporciona un resumen de los trabajos
+                        realizados y puede ser utilizado como referencia para
+                        el cambio de cubla que se realizó de manera correcta,
+                        evitando pérdidas futuras. Se reemplazó grifería FV,
+                        quedando en perfecto funcionamiento.
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <div class="contact-item">
-                  <img
-                    src="../../assets/mail.png"
-                    alt="Icono"
-                    style="width: 50px; height: 50px"
-                  />
-                  <p class="p-2">
-                    <a href="mailto:academy@rollingcodeschool.com"
-                      >academy@rollingcodeschool.com</a
-                    >
-                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="card m-5 tamCard">
+            <div class="card-header d-flex justify-content-center align-items-center">
+              <img class="imgRubro" src="../../assets/carrito/diseñoInteriores.png" alt="" />
+              <h5 class="p-2">Diseño Interiores</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <img src="../../assets/img-servicios/Romi.png" alt="usuario" />
+                <h3>Romina Ocampo</h3>
+              </li>
+              <li class="list-group-item">
+                <div class="table-responsive">
+                  <table class="table table-bordered border-primary">
+                    <thead>
+                      <tr>
+                        <th scope="col">Codigo</th>
+                        <th scope="col">Decripcion</th>
+                        <th scope="col">Cantidad</th>
+                        <th scope="col">Precio Unitario</th>
+                        <th scope="col">Total</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Horas Trabajadas</td>
+                        <td>1</td>
+                        <td>$1000</td>
+                        <td>$1000</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>iluminacion decorativa</td>
+                        <td>2</td>
+                        <td>$1000</td>
+                        <td>$4000</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>cuadros deco</td>
+                        <td>2</td>
+                        <td>$3000</td>
+                        <td>$6000</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </li>
+            </ul>
+            <div class="d-flex justify-content-center m-3">
+              <button type="button" class="btn btn-primary w-50" data-bs-toggle="modal"
+                data-bs-target="#ModalTecnicoDiseño">
+                Informe Tecnico
+              </button>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="ModalTecnicoDiseño" tabindex="-1" aria-labelledby="ModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="ModalLabel">
+                      Trabajos Realizados
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body overflow-auto">
+                    <div class="text-justify bg-light p-3 border rounded">
+                      <h1 class="fs-4 text-primary">
+                        <strong>Informe Técnico Diseño Interiores</strong>
+                      </h1>
+                      <p>
+                        <strong>Proyecto:</strong> Colocacion luminaria deco
+                        y decoracion cuadros decorativos
+                      </p>
+                      <p>
+                        <strong>Descripción del Trabajo:</strong> El trabajo
+                        realizado comprende en colocacion y sugerencia nueva luminaria y colocacion de cuadro decorativo
+                        acorde al ambiente
+                        principal
+                      </p>
+
+                      <h4 class="fs-5 text-primary">
+                        <strong>1. Cambio luminaria Deco
+                        </strong>
+                      </h4>
+
+                      <ul class="list-unstyled">
+                        <li>
+                          <strong>Tipo de luminaria:</strong>
+                          Luminaria moderna color negro forma campana con luz drico
+                        </li>
+                        <li>
+                          <strong>Objetivo:</strong> Mejorar luminocidad Ambiente y darle un toque moderno
+
+                        </li>
+                        <li>
+                          <strong>Procedimiento:</strong>
+                          <ul class="list-unstyled">
+                            <li>
+                              Recambio luminaria existente y colocacion nueva luminaria
+                            </li>
+                            <li>prueba de iluminacion</li>
+                          </ul>
+                        </li>
+                      </ul>
+
+                      <h4 class="fs-5 text-primary">
+                        <strong>2. Colocacion de dos cuadros en ambiente</strong>
+                      </h4>
+
+                      <ul class="list-unstyled">
+                        <li>
+                          <strong>Tipo cuadro:</strong> cuadro de 20 * 20 con luz led
+                        </li>
+                        <li><strong>Cantidad:</strong> 2 unidad.</li>
+                        <li>
+                          <strong>Objetivo:</strong> colocar cuadro y ubicarlo segun las necesidades del cliente
+                        </li>
+                        <li>
+                          <strong>Procedimiento:</strong>
+                          <ul class="list-unstyled">
+                            <li>colocalacion cuadro</li>
+                            <li>
+                              prueba de las luces led del cuadro
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                      <p>
+                        <strong>Materiales Utilizados:</strong> 2 cuadros 20*20 cm y dos lamparas deco
+                      </p>
+                      <p><strong>Pruebas Realizadas:</strong></p>
+                      <ul class="list-unstyled">
+                        <li>prueba correcata iluminacion</li>
+                        <li>
+                          prueba led cuadros y ubicacion deseada
+                        </li>
+                      </ul>
+
+                      <h4 class="fs-5 text-primary">
+                        <strong>Conclusión:</strong>
+                      </h4>
+                      <hr />
+                      <p>
+                        verificar la correcta colocacion de iluminacion y cuadros esperando la conformidad del cliente
+                      </p>
+                      <p>
+                        Este informe proporciona un resumen de los trabajos
+                        realizados y puede ser utilizado como referencia para
+                        futuras inspecciones o mantenimientos de la
+                        instalación.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card m-5 tamCard">
+            <div class="card-header d-flex justify-content-center align-items-center">
+              <img class="imgRubro" src="../../assets/carrito/carpinteria.png" alt="" />
+              <h5 class="p-2">carpinteria</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <img src="../../assets/img-servicios/Eduardo.png" alt="usuario" />
+                <h3>Eduardo Aaron Marquez Lopez</h3>
+              </li>
+              <li class="list-group-item">
+                <div class="table-responsive">
+                  <table class="table table-bordered border-primary">
+                    <thead>
+                      <tr>
+                        <th scope="col">Codigo</th>
+                        <th scope="col">Decripcion</th>
+                        <th scope="col">Cantidad</th>
+                        <th scope="col">Precio Unitario</th>
+                        <th scope="col">Total</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Horas Trabajadas</td>
+                        <td>1</td>
+                        <td>$1000</td>
+                        <td>$1000</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>bisagra Bronce</td>
+                        <td>4</td>
+                        <td>$1000</td>
+                        <td>$4000</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Tapacanto</td>
+                        <td>2</td>
+                        <td>$3000</td>
+                        <td>$6000</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </li>
+            </ul>
+            <div class="d-flex justify-content-center m-3">
+              <button type="button" class="btn btn-primary w-50" data-bs-toggle="modal"
+                data-bs-target="#ModalTecnicoCarpinteria">
+                Informe Tecnico
+              </button>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="ModalTecnicoCarpinteria" tabindex="-1" aria-labelledby="ModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="ModalLabel">
+                      Trabajos Realizados
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body overflow-auto">
+                    <div class="text-justify bg-light p-3 border rounded">
+                      <h1 class="fs-4 text-primary">
+                        <strong>Informe Técnico Carpinteria</strong>
+                      </h1>
+                      <p>
+                        <strong>Proyecto:</strong> Recambio de bisagras
+                        Placard y colocacion Tapa Canto Maderas Vestidor
+                      </p>
+                      <p>
+                        <strong>Descripción del Trabajo:</strong> El trabajo
+                        realizado comprende en el cambio de bisagras Placard
+                        Habitacion Principal por encontrarse falseada,
+                        Colocacion Tapacanto en todas las maderas del vestidor
+                        principal
+                      </p>
+
+                      <h4 class="fs-5 text-primary">
+                        <strong>1. Cambio bisagras Placard Habitacion
+                          Principal</strong>
+                      </h4>
+
+                      <ul class="list-unstyled">
+                        <li>
+                          <strong>Tipo de Bisagra:</strong> Bisagra 20cm doble
+                          Tornillo Bronce
+                        </li>
+                        <li>
+                          <strong>Objetivo:</strong> Evitar que la puerta deje
+                          se hacer juego y que la puerta no se caiga
+                        </li>
+                        <li>
+                          <strong>Procedimiento:</strong>
+                          <ul class="list-unstyled">
+                            <li>
+                              Retiro bisagra actual y Reemplazo de nueva
+                              bisagra
+                            </li>
+                            <li>Calibracion bisagra nueva</li>
+                          </ul>
+                        </li>
+                      </ul>
+
+                      <h4 class="fs-5 text-primary">
+                        <strong>2. Recambio Tapacanto Maderas Vestidor</strong>
+                      </h4>
+
+                      <ul class="list-unstyled">
+                        <li>
+                          <strong>Tipo Tapacanto:</strong> Tapacanto color
+                          marron Oscuro de 20 cm de ancho autoadhesivo
+                        </li>
+                        <li><strong>Cantidad:</strong> 3 unidad.</li>
+                        <li>
+                          <strong>Objetivo:</strong> Sustituir el tapacanto
+                          Original Reemplazandolo por un nuevo
+                        </li>
+                        <li>
+                          <strong>Procedimiento:</strong>
+                          <ul class="list-unstyled">
+                            <li>Retiro de Tapacanto Existente</li>
+                            <li>
+                              Colocacion tapacanto nuevo, revisando que quede
+                              correctamente pegado
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                      <p>
+                        <strong>Materiales Utilizados:</strong> Bisagra bronce
+                        20 cm doble ojal, Tapacanto color marron 20 cm de
+                        ancho
+                      </p>
+                      <p><strong>Pruebas Realizadas:</strong></p>
+                      <ul class="list-unstyled">
+                        <li>Prueba de apertura de puertas y cierre parejo</li>
+                        <li>
+                          Verificacion de tapancanto que quede correctamente
+                          pegado
+                        </li>
+                      </ul>
+
+                      <h4 class="fs-5 text-primary">
+                        <strong>Conclusión:</strong>
+                      </h4>
+                      <hr />
+                      <p>
+                        El cambio de bisagra quedo correcta y sin juego y el
+                        tapacanto quedo pegado correctamente
+                      </p>
+                      <p>
+                        Este informe proporciona un resumen de los trabajos
+                        realizados y puede ser utilizado como referencia para
+                        futuras inspecciones o mantenimientos de la
+                        instalación.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card m-5 tamCard">
+            <div class="card-header d-flex justify-content-center align-items-center">
+              <img class="imgRubro" src="../../assets/carrito/cerrajeria.png" alt="" />
+              <h5 class="p-2">Cerrajeria</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <img src="../../assets/img-servicios/Aryan.png" alt="usuario" />
+                <h3>Aryan Alberto Juarez</h3>
+              </li>
+              <li class="list-group-item">
+                <div class="table-responsive">
+                  <table class="table table-bordered border-primary">
+                    <thead>
+                      <tr>
+                        <th scope="col">Codigo</th>
+                        <th scope="col">Decripcion</th>
+                        <th scope="col">Cantidad</th>
+                        <th scope="col">Precio Unitario</th>
+                        <th scope="col">Total</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Horas Trabajadas</td>
+                        <td>1</td>
+                        <td>$1000</td>
+                        <td>$1000</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Cerradura</td>
+                        <td>1</td>
+                        <td>$1000</td>
+                        <td>$4000</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </li>
+            </ul>
+            <div class="d-flex justify-content-center m-3">
+              <button type="button" class="btn btn-primary w-50" data-bs-toggle="modal"
+                data-bs-target="#ModalTecnicoCerrajeria">
+                Informe Tecnico
+              </button>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="ModalTecnicoCerrajeria" tabindex="-1" aria-labelledby="ModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="ModalLabel">
+                      Trabajos Realizados
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body overflow-auto">
+                    <div class="text-justify bg-light p-3 border rounded">
+                      <h1 class="fs-4 text-primary">
+                        <strong>Informe Técnico Cerrajeria</strong>
+                      </h1>
+                      <p>
+                        <strong>Proyecto:</strong> colocacion de nueva cerradura puerta principal
+                      </p>
+                      <p>
+                        <strong>Descripción del Trabajo:</strong> Se procede a quitar la cerradura existente colocando
+                        una nueva de calidad superior
+                      </p>
+
+                      <h4 class="fs-5 text-primary">
+                        <strong>1. Cambio Cerradura
+                        </strong>
+                      </h4>
+
+                      <ul class="list-unstyled">
+                        <li>
+                          <strong>Tipo de Cerradura:</strong> Cerradura Pentagono bronce
+                        </li>
+                        <li>
+                          <strong>Objetivo:</strong> Mejorar la seguridad en la puerta principal colocando una cerradura
+                          de excelente calidad
+                        </li>
+                        <li>
+                          <strong>Procedimiento:</strong>
+                          <ul class="list-unstyled">
+                            <li>
+                              Retiro cerradura existente, reacondicionamiente puerta principal para colocacion cerradura
+                              nueva
+                            </li>
+                            <li>Prueba de llave y funcionamiento</li>
+                          </ul>
+                        </li>
+                      </ul>
+                      <p>
+                        <strong>Materiales Utilizados:</strong> Cerradura Marca Pentagono 8 pestillos
+                      </p>
+                      <p><strong>Pruebas Realizadas:</strong></p>
+                      <ul class="list-unstyled">
+                        <li>Prueba de apertura de puertas y cierre puerta</li>
+                        <li>
+                          verificacion de todas la llaves en la cerradura
+                        </li>
+                      </ul>
+
+                      <h4 class="fs-5 text-primary">
+                        <strong>Conclusión:</strong>
+                      </h4>
+                      <hr />
+                      <p>
+                        El cambio de cerradura quedo correcta y con pruebas exitosas realizadad
+                      </p>
+                      <p>
+                        Este informe proporciona un resumen de los trabajos
+                        realizados y puede ser utilizado como referencia para
+                        futuras inspecciones o mantenimientos de la
+                        instalación.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="d-flex flex-column align-items-center">
-          <hr class="my-2 linea" />
-          <div
-            class="d-flex flex-column principalfooter align-items-center justify-content-center"
-          >
-            <img src="../../assets/logo ST.png" alt="logo" />
-            <p>
-              Soluciones integrales para tu hogar: electricidad, carpintería,
-              plomería y más. ¡Todo lo que necesitas, en manos expertas!
-            </p>
+        <div
+          class="d-flex flex-column col-lg-6 col-md-12 col-sm-12 text-center d-flex flex-column justify-content-center align-items-center">
+          <div class="col-lg-6 col-md-12 col-sm-12 position-relative d-flex align-items-center justify-content-center">
+            <img class="responsive-img" src="../../assets/carrito/mediosDePago.png" alt="imgMediosPago" />
           </div>
-          <hr class="my-2 linea" />
-          <div
-            class="d-flex flex-column principalfooter align-items-center justify-content-center"
-          >
-            <p class="mb-0">@Copyright. All Equipo Rocket</p>
+
+          <form class="row g-3 col-lg-6 col-md-6 col-sm-12 needs-validation d-flex flex-column w-100 align-items-center"
+            novalidate>
+            <div class="col-lg-6 col-md-12 col-sm-12 position-relative">
+              <label for="validationTooltip01" class="form-label">
+                CANTIDAD ITEMS</label>
+              <input type="text" class="form-control" id="validationTooltip01" value="3" disabled required />
+              <div class="valid-tooltip">Looks good!</div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 position-relative">
+              <label for="validationTooltip02" class="form-label">SubTotal</label>
+              <input type="text" class="form-control" id="validationTooltip02" value="$ 63000" disabled required />
+              <div class="valid-tooltip">Looks good!</div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 position-relative">
+              <label for="validationTooltip02" class="form-label">IVA 21%</label>
+              <input type="text" class="form-control" id="validationTooltip02" value="$ 13230" disabled required />
+              <div class="valid-tooltip">Looks good!</div>
+            </div>
+
+            <div class="col-lg-6 col-md-12 col-sm-12 position-relative">
+              <label for="validationTooltip02" class="form-label">TOTAL</label>
+              <input type="text" class="form-control" id="validationTooltip02" value="$ 76230" disabled required />
+              <div class="valid-tooltip">Looks good!</div>
+            </div>
+
+            <div class="col-lg-6 col-md-12 col-sm-12 position-relative">
+              <label for="validarionMedios" class="form-label">MEDIOS DE PAGO</label>
+              <select class="form-select" id="validarionMedios" required>
+                <option selected disabled value="">Seleccion...</option>
+                <option>Debito</option>
+                <option>Credito</option>
+                <option>Efectivo 10% descuento</option>
+                <option>Mercado Pago</option>
+              </select>
+              <div class="invalid-tooltip">Selecciones el medio de pago.</div>
+            </div>
+
+            <div class="col-lg-6 col-md-12 col-sm-12 position-relative">
+              <label for="validadionCuotas" class="form-label">Seleccione Cuotas</label>
+              <select class="form-select" id="validadionCuotas" required>
+                <option selected disabled value="">Seleccion...</option>
+                <option>1 x 76230</option>
+                <option>3 x 25410</option>
+                <option>12 x 6352.5</option>
+              </select>
+              <div class="invalid-tooltip">Seleccione una cuota valida</div>
+            </div>
+            <div class="col-12 p-3">
+              <button class="btn btn-primary tamBtn" type="submit">
+                Efectuar Pago
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="w-100 colorFooter">
+      <div class="secundaryfooter">
+        <div class="row">
+          <div class="d-flex flex-column align-items-center col-lg-4 col-sm-6 text-center">
+            <h3>SUSCRIBETE A LAS NEWSLETTER</h3>
+            <h5>Recibe ofertas, novedades y mucho mas...</h5>
+            <div class="mb-3 imputNew">
+              <label for="controlInput" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="controlInput" placeholder="Indicanos tu Email" />
+            </div>
+            <a class="mb-4 mt-4 m" href="../acercaDe/acercaDe.html">+ Informacion Sobre Nosotros</a>
+
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+              <label class="form-check-label mb-3 ms-0" for="flexCheckDefault">
+                He leido y acepto la politica de privacidad
+                <a class="mb-4 mt-4" href="../error/error404.html">
+                  politica de Privacidad</a>
+              </label>
+            </div>
+
+            <button onclick="window.location.href='../error/error404.html';" type="button btnNews"
+              class="btn btn-primary">
+              QUIERO SUBCRIBIRME
+            </button>
+          </div>
+          <div class="col-md-3 col-lg-4 col-sm-6 d-flex flex-column align-items-center">
+            <h3>Síguenos</h3>
+            <div class="contact-info">
+              <div class="contact-item">
+                <img src="../../assets/communication.png" alt="Icono" style="width: 50px; height: 50px" />
+                <p class="p-2">
+                  <a href="https:facebook.com" target="_blank">Facebook</a>
+                </p>
+              </div>
+              <div class="contact-item">
+                <img src="../../assets/instagram.png" alt="Icono" style="width: 50px; height: 50px" />
+                <p class="p-2">
+                  <a href="https:instagram.com" target="_blank">Instagram</a>
+                </p>
+              </div>
+              <div class="contact-item">
+                <img src="../../assets/twitter.png" alt="Icono" style="width: 50px; height: 50px" />
+                <p class="p-2">
+                  <a href="https://x.com/" target="_blank">Twitter</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-lg-4 col-sm-6 d-flex flex-column align-items-center">
+            <h3>Contacto</h3>
+            <div class="contact-info">
+              <div class="contact-item">
+                <img src="../../assets/location.png" alt="Icono" style="width: 50px; height: 50px" />
+                <p class="p-2">RollingCode</p>
+              </div>
+              <div class="contact-item">
+                <img src="../../assets/telephone.png" alt="Icono" style="width: 50px; height: 50px" />
+                <p class="p-2">+54 381 578-3030</p>
+              </div>
+              <div class="contact-item">
+                <img src="../../assets/mail.png" alt="Icono" style="width: 50px; height: 50px" />
+                <p class="p-2">
+                  <a href="mailto:academy@rollingcodeschool.com">academy@rollingcodeschool.com</a>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </footer>
+      <div class="d-flex flex-column align-items-center">
+        <hr class="my-2 linea" />
+        <div class="d-flex flex-column principalfooter align-items-center justify-content-center">
+          <img src="../../assets/logo ST.png" alt="logo" />
+          <p>
+            Soluciones integrales para tu hogar: electricidad, carpintería,
+            plomería y más. ¡Todo lo que necesitas, en manos expertas!
+          </p>
+        </div>
+        <hr class="my-2 linea" />
+        <div class="d-flex flex-column principalfooter align-items-center justify-content-center">
+          <p class="mb-0">@Copyright. All Equipo Rocket</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 
-    <script>
-      (() => {
-        "use strict";
+  <script>
+    (() => {
+      "use strict";
 
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-        const forms = document.querySelectorAll(".needs-validation");
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      const forms = document.querySelectorAll(".needs-validation");
 
-        // Loop over them and prevent submission
-        Array.from(forms).forEach((form) => {
-          form.addEventListener(
-            "submit",
-            (event) => {
-              if (!form.checkValidity()) {
-                event.preventDefault();
-                event.stopPropagation();
-              }
-              form.classList.add("was-validated");
-            },
-            false
-          );
-        });
-      })();
-    </script>
-  </body>
+      // Loop over them and prevent submission
+      Array.from(forms).forEach((form) => {
+        form.addEventListener(
+          "submit",
+          (event) => {
+            if (!form.checkValidity()) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add("was-validated");
+          },
+          false
+        );
+      });
+    })();
+  </script>
+</body>
+
 </html>
