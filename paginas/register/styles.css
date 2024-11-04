@@ -20,13 +20,24 @@ main {
 .tamBtn {
     width: 400px;
     height: 50px;
-}
+  }
+
+/* .input{
+    width: 20rem!important;   
+} */
 
 
-/* MEDIA QUERIES PANTALLA SM */
+  /* MEDIA QUERIES PANTALLA SM */
 @media (max-width: 768px) {
     .tamBtn {
         width: 200px;
         height: 50px;
+      }
+      .input{
+       width: 20rem!important; 
+           
     }
-}
+    
+    
+  }
+  
