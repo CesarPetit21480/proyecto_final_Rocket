@@ -5,6 +5,14 @@
 
 }
 
+.card{
+
+    height: 25rem !important;
+    margin-bottom: 10px !important;
+  
+ 
+}
+
 
 .card img {
     width: 100px;
